@@ -1,0 +1,24 @@
+상품 4개
+클릭시 다른 상품 -> el -> id
+Pdf 
+Api 명세서 (연동방법)
+Dom, code 같이
+소스코드도 제출
+image downloader - imageye
+
+
+1. main page
+2. list page: Girls, Boys
+3. item page
+
+part-one - phone/tablet
+https://cdn.media.amplience.net/i/oldnavyprod/240903_05-M2004_WorkPants_Hero_HP_SM_USCA?fmt=webp
+https://cdn.media.amplience.net/i/oldnavyprod/240903_05-M2004_WorkPants_CatNav_HP_SM_USCA?fmt=webp
+
+https://cdn.media.amplience.net/i/oldnavyprod/bg_7?fmt=webp
+
+footer img url
+https://oldnavy.gap.com/Asset_Archive/ONWeb/content/static-marketing/footer-assets/EDFS_Footer.svg
+https://oldnavy.gap.com/Asset_Archive/ONWeb/content/static-marketing/navyist/Navyist_logo.svg
+https://oldnavy.gap.com/Asset_Archive/assets/privacyoptions.svg
+

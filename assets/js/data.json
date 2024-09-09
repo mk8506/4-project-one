@@ -1,0 +1,84 @@
+{
+  "partOne": [
+    {
+      "id": 101,
+      "img": "./assets/img/part-one 101 img one.png",
+      "alt": "part-one 101 img one",
+      "title": "cc’ing Polished Pixie Skinny and Taylor Trouser, your do-it-all faves.",
+      "button1": "SHOP PIXIE PANTS", "button2": "SHOP TAYLOR TROUSERS"
+    },
+    {
+      "id": 201, 
+      "img": "./assets/img/part-one 201 img three.png", 
+      "alt": "part-one 201 img three",
+      "title": "And fyi, Rotation Chino and Tech Ultimate are popular around the office, too.", 
+      "button1": "SHOP MEN'S PANTS"
+    },
+    {
+      "id": 301, 
+      "img": "./assets/img/part-one 301 img one.png", 
+      "alt": "part-one 301 img one",
+      "title": "The building blocks for your little’s fall closet (at a major steal!)", 
+      "button1": "SHOP KIDS & BABY SALE +"
+    },
+    {
+      "id": 402, 
+      "img": "./assets/img/part-one 401 img one.png", 
+      "alt": "part-one 401 img one",
+      "title": "Ready, set, scare! Halloween pjs are here.", 
+      "button1": "SHOP FOR THE FAM", 
+      "button2": "SHOP TODDLER +", 
+      "button3": "SHOP BABY +"
+    }
+  ],
+  "partTwo": [
+    {
+      "id": 101, 
+      "img": "./assets/img/partTwoImgs/1.jpg", 
+      "alt": "part-two img 1",
+      "title": "High-Waisted PowerSoft Joggers", 
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 102, 
+      "img": "./assets/img/partTwoImgs/2.jpg", 
+      "alt": "part-two img 2",
+      "title": "High-Waisted PowerSoft 7/8 Leggings", 
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 103, 
+      "img": "./assets/img/partTwoImgs/3.jpg", 
+      "alt": "part-two img 3",
+      "title": "High-Waisted PowerSoft Joggers", 
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 104, 
+      "img": "./assets/img/partTwoImgs/4.jpg", 
+      "alt": "part-two img 4",
+      "title": "High-Waisted PowerSoft 7/8 Leggings", 
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 105, 
+      "img": "./assets/img/partTwoImgs/5.jpg", 
+      "alt": "part-two img 5",
+      "title": "High-Waisted PowerSoft Joggers", 
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 106, 
+      "img": "./assets/img/partTwoImgs/6.jpg", 
+      "alt": "part-two img 6",
+      "title": "High-Waisted PowerSoft 7/8 Leggings", 
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    }
+  ]
+}
