@@ -65,8 +65,17 @@ window.addEventListener("load",async  e => {
 
   //part-two
   //이것도 3번 돌아야함 two-a,b,c
+  for (let i = 0; i < response.data.partTwo.length/5; i++) {
+    const div = document.createElement("div");
+    const ul = document.createElement("ul");
+    document.querySelector(".glide__slides").appendChild(div);
+    div.appendChild(ul);
+    div.setAttribute("class", "glide__slide");
+    ul.setAttribute("class", "glide-ul")
+  }
   response.data.partTwo.forEach((v,i) => {
-    //li > a > figure, p1, p2
+    //div > ul > li > a > figure, p1, p2
+    //if (li 1~5) {div > ul > li 5개}
     //p2 > span1, span2
     const li = document.createElement("li");
     const a = document.createElement("a");
@@ -75,8 +84,9 @@ window.addEventListener("load",async  e => {
     const p2 = document.createElement("p");
     const span1 = document.createElement("span");
     const span2 = document.createElement("span");
-
-    document.querySelector(".part-two-ul").appendChild(li);
+    
+    //0->0, 5->1, 10->2
+    document.querySelectorAll(".glide-ul")[Math.floor(i/5)].appendChild(li);
     li.appendChild(a);
     a.appendChild(figure);
     a.appendChild(p1);
@@ -88,7 +98,6 @@ window.addEventListener("load",async  e => {
 
     figure.appendChild(img);
 
-    li.setAttribute("class", "glide__slide");
     a.setAttribute("class", "part-two-a");
     figure.setAttribute("class", "part-two-figure");
     img.setAttribute("src", response.data.partTwo[i].img);
@@ -96,8 +105,25 @@ window.addEventListener("load",async  e => {
 
     p1.innerHTML = response.data.partTwo[i].title;
     span1.innerHTML = response.data.partTwo[i].price1;
-    span2.innerHTML = response.data.partTwo[i].price2;    
+    span2.innerHTML = response.data.partTwo[i].price2;
   })
 
+  document.querySelectorAll(".glide").forEach((v,i) => {
+    v.insertAdjacentHTML('beforeend',`
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left one-arrow-left" data-glide-dir="<">
+              <img src="./assets/img/icons/arrow.svg" alt="left arrow"/>
+            </button>
+            <button class="glide__arrow glide__arrow--right one-arrow-right" data-glide-dir=">">
+              <img src="./assets/img/icons/arrow.svg" alt="right arrow" class="right-arrow"/>
+            </button>
+          </div>`);
+  })
+  const glide = new Glide('.glide');
+  glide.mount();
+  // const splide = new Splide( '.splide' );
+  // splide.mount();
 
+  //most likely due to how and when the library attaches its event listeners.
 });
+
