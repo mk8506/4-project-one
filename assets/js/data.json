@@ -79,6 +79,38 @@
       "title": "High-Waisted PowerSoft 7/8 Leggings", 
       "price1": "&dollar;39.99",
       "price2": "&dollar;23.99"
+    },
+    {
+      "id": 107, 
+      "img": "./assets/img/partTwoImgs/7.jpg", 
+      "alt": "part-two img 7",
+      "title": "High-Waisted PowerSoft Joggers", 
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 108, 
+      "img": "./assets/img/partTwoImgs/8.jpg", 
+      "alt": "part-two img 8",
+      "title": "High-Waisted PowerSoft 7/8 Leggings", 
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 109, 
+      "img": "./assets/img/partTwoImgs/9.jpg", 
+      "alt": "part-two img 9",
+      "title": "High-Waisted PowerSoft Joggers", 
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 110, 
+      "img": "./assets/img/partTwoImgs/10.jpg", 
+      "alt": "part-two img 10",
+      "title": "High-Waisted PowerSoft 7/8 Leggings", 
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
     }
   ]
 }

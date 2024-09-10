@@ -7,31 +7,52 @@
   <link rel="stylesheet" href="./assets/css/reset.css"/>
   <link rel="stylesheet" href="./assets/css/common.css"/>
   <link rel="stylesheet" href="./assets/css/index.css"/>
+  <link rel="stylesheet" href="./assets/css/glide.core.min.css"/>
+  <link rel="stylesheet" href="./assets/css/glide.theme.min.css"/>
 </head>
 <body>
   <!--sitewide-->
   <header> <!--scroll up -> fixed-->
     <!--top-->
-    <div class="sitewide-top">
-      <ul>
-        <li>
-          <a href="#">
-            <i class="fa fa-home"></i>
-            <span>HOME</span>
-          </a>
-        </li>
-      </ul>
+    <div class="sitewide-top flex">
+      <div class="logos">
+        <a href="#"><img src="./assets/img/old-navy-sitewide-top/download.svg" alt="logo0"/></a>
+        <a href="#"><img src="./assets/img/old-navy-sitewide-top/download (1).svg" alt="logo1"/></a>
+        <a href="#"><img src="./assets/img/old-navy-sitewide-top/download (3).svg" alt="logo2"/></a>
+        <a href="#"><img src="./assets/img/old-navy-sitewide-top/download (2).svg" alt="logo3"/></a>
+      </div>
+      <p class="top-p">FREE SHIPPING ON $50+ FOR REWARDS MEMBERS <a>SIGN IN OR JOIN</a> <a>Details</a></p>
+      <div class="flex">
+        <a href="#">
+          <p>Sign In<br/>Your Account</p>
+        </a>
+        <a href="#"><img src="./assets/img/old-navy-sitewide-top/download (4).svg" alt="logo4"/></a>
+      </div>
     </div>
     <!--nav-->
-    <div class="sitewide-nav">
-      <ul class="menu">
-        <li>
-          <a href="#">
-            <i class="fa fa-home"></i>
-            <span>HOME</span>
-          </a>
-        </li>
-      </ul>
+    <div class="sitewide-nav flex">
+      <div class="nav-left">
+        <span><a href="#" class="nav-a logo-container"><img src="./assets/img/Old_Navy.jpg" alt="old navy logo"/></a>
+          <a href="#" class="nav-a">Now Trending!</a>
+          <a href="#" class="nav-a">Women</a>
+          <a href="#" class="nav-a">Men</a>
+          <a href="#" class="nav-a">Girls</a>
+          <a href="#" class="nav-a">Boys</a>
+          <a href="#" class="nav-a">Toddler</a>
+          <a href="#" class="nav-a">Baby</a>
+          <a href="#" class="nav-a">Maternity</a>
+          <a href="#" class="nav-a">Uniforms</a>
+          <a href="#" class="nav-a">Family Pajamas</a>
+          <a href="#" class="nav-a">Today’s Deals!</a></span>
+      </div>
+      <div class="nav-right">
+        <div class="in-nav flex">
+          <p>Find a store</p>
+          <p>Navyist Rewards</p>
+          <p>Gift Card</p>
+        </div>
+        <div></div>
+      </div>
     </div>
   </header>
 
@@ -45,33 +66,134 @@
     </div>
     <!--part-two: product img + title + price-->
     <div class="part-two">
+      <h1 class="part-two-title">WE PICKED THESE JUST FOR YOU...</h1>
 
       <!--loop this too-->
       <div class="glide">
         <div class="glide__track" data-glide-el="track">
-          <ul class="part-two-ul glide__slides">
+          <div class="glide__slides">
 
             <!--i need to create div for every 5 lis.. class="glide__slide"-->
+            <!--no... li should do that work...-->
+            <!--div > ul > 5 lis-->
 
-
-          </ul>
-
-          <!--arrows-->
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left one-arrow-left" data-glide-dir="<"><</button>
-            <button class="glide__arrow glide__arrow--right one-arrow-right" data-glide-dir=">">></button>
           </div>
-
         </div>
+        <!--arrows-->
+        
       </div>
 
 
 
     </div>
+
+    <!--part three: p, img-->
+    <div class="part-three flex"><!--click -> popup-->
+      <div>
+        <h1>4 BRANDS 1 EASY CHECKOUT</h1>
+        <p>REWARDS MEMBERS get FREE<br/>SHIPPING on<br/>
+          all orders $50+ <a>Sign in</a> or <a>Join</a> <a>DETAILS</a></p>
+      </div>
+      <div class="four-logos-container">
+        <img src="./assets/img/old-navy-footer/EDFS_Footer.svg" alt="four logos"/>
+      </div>
+    </div>
   </main>
+
+  <footer>
+    <div class="subscribe flex">
+      <!--email-->
+      <div>
+        <h2>SIGN UP FOR EMAIL</h2>
+        <p>Be the first to know about new arrivals, buzzy sales, & other very nice things.</p>
+        <form>
+          <input type="email"/>
+          <button type="submit">JOIN</button>
+        </form>
+      </div>
+      <!--mobile number-->
+      <div>
+        <img/>
+        <div>
+          <img/>
+          <form>
+            <input type="number"/>
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+        <p>By entering~</p>
+      </div>
+      <!--learn more-->
+      <div>
+        <!--gilder library-->
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><img src="./assets/img/old-navy-footer/footer-glider-one.svg" alt="imagine"/></li>
+              <li class="glide__slide"><img src="./assets/img/old-navy-footer/footer-glider-two.svg" alt="we can change"/></li>
+              <li class="glide__slide"><img src="./assets/img/old-navy-footer/footer-glider-three.jpg" alt="find a store"/></li>
+            </ul>
+          </div>
+          <!--arrows-->
+        </div>
+      </div>
+    </div>
+    <div class="social-media-container">
+      <div>
+        <img src="./assets/img/social-media.svg" alt="social-media"/>
+      </div>
+    </div>
+    <div class="more flex">
+      <ul>
+        <li><h1>CUSTOMER SERVICE</p></li>
+        <li><p>Customer Service</p></li>
+        <li><p>Shipping</p></li>
+        <li><p>Returns</p></li>
+        <li><p>Buy gift cards</p></li>
+        <li><p>Size charts</p></li>
+        <li><p>Buy Online. Pick up in-store.</p></li>
+      </ul>
+      <ul>
+        <li><h1>LEARN MORE</h1></li>
+        <li><p>Our Affiliate program</p></li>
+        <li><p>Super Cash</p></li>
+        <li><p>Careers @ Old Navy</p></li>
+        <li><p>Sustainability</p></li>
+      </ul>
+      <ul>
+        <li class="on-container"><img src="./assets/img/old-navy-footer/Navyist_logo.svg" alt="on"/></li>
+        <li><p>My Points and Rewards</p></li>
+        <li><p>Explore Benefits</p></li>
+        <li><p>Pay credit card bill</p></li>
+        <li><p>Activate credit card</p></li>
+        <li><p>Join Navyist Rewards - it’s Free</p></li>
+        <li><p>or Apply Now for a Credit Card</p></li>
+      </ul>
+      <ul>
+        <li><h1>FIND US</h1></li>
+        <li><p>1-800-OLD-NAVY</p></li>
+        <li><p>(1.800.653.6289)</p></li>
+        <li><p>Email sign-up</p></li>
+        <li><p>Store Locator</p></li>
+      </ul>
+
+    </div>
+    <div class="policy">
+      <div>© 2024 Old Navy, LLC|Privacy Policy|Your Privacy Choices|Your California Privacy Rights|California Transparency in Supply Chains Act|Terms of Use|Careers|Sustainability|Navyist Rewards|About Gap Inc.</div>
+      <div>Americans with Disabilities Act|Gap Inc. Policies</div>
+    </div>
+  </footer>
+
+  <div class="fixed-bottom">
+    <p>TODAY ONLY! &dollar;12 + &dollar;14 FLEECE JOGGERS</p>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script src="./assets/js/index.js"></script>
+  <script>
+    const glide1 = new Glide('.glide').mount();
+    glide1.mount();
+  </script>
 </body>
 </html>
