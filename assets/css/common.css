@@ -77,30 +77,35 @@ footer {
 .subscribe {
   justify-content: space-around;
   flex-basis: auto;
+  border-top: 3px solid black;
+  padding: 55px;
+
+  .glide {
+    width: 500px;
+  }
   
   .glide__slide {
-    width: 200px;
-    height: 150px;
+    width: 100px;
+    height: 80px;
+
+    img {
+      width: 200px;
+    }
   }
 }
 
 .social-media-container {
   border-bottom: 1px solid black;
+  border-top: 1px solid rgb(175, 175, 175);
   
-  .on-container {
-    width: 60px;
-    height: 30px;
-  }
-
-  div{
-    width: 767px;
-    height: 74px;
+  figure {
+    width: 620px;
+    height: auto;
     margin: auto;
+    padding: 12px 0;
 
     img {
-      /* display: table-cell;
-      vertical-align: middle; */
-      padding: 18px 0;
+      margin-top: 8px;
     }
   }
 }
@@ -110,6 +115,11 @@ footer {
   margin: auto;
   margin-top: 35px;
   margin-bottom: 35px;
+  
+  .on-container {
+    width: 60px;
+    height: 30px;
+  }
 
   ul {
     width: 25%;

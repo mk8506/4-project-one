@@ -42,23 +42,67 @@ button {
   margin-bottom: 20px;
 }
 
+.glide {
+  margin: 20px 50px;
+}
+
 .glide-ul {
   display: flex;
   flex-direction: row;
+
+  li {
+    margin-left: 16px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
 }
 
 .glide__slide {
   padding: 0 8px;
+  width: 100%;
 }
 
 .part-two-a {
-  width: 0.17rem;
 }
 
 .part-two-figure {
   width: 100%;
   height: auto;
 }
+
+/*part-two h1,p*/
+
+.part-two-title {
+  margin-top: 50px;
+
+  h1 {
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  p {
+    margin-top: 8px;
+    text-align: center;
+    font-size: 16px;
+
+    a {
+      color: black;
+      letter-spacing: 1px;
+      font-weight: bold;
+      display: inline-block;
+      margin-left: 40px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+
 
 /*part three*/
 
@@ -79,7 +123,6 @@ button {
 
 .four-logos-container {
   width: 400px;
-  height: 250px;
 
   img {
     width: 100%;

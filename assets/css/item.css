@@ -1,0 +1,31 @@
+html {
+  background-color: rgb(158, 158, 158)
+}
+
+.boxes {
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+main {
+  position: relative;
+}
+
+.fixed-container {
+  height:120vh;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.fixed {
+  overflow: clip;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 1080px;
+  top:0;
+  overflow:   scroll;
+}
+
+.details {
+  height: 200vh;
+}

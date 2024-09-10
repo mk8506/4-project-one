@@ -65,48 +65,77 @@ window.addEventListener("load",async  e => {
 
   //part-two
   //이것도 3번 돌아야함 two-a,b,c
-  for (let i = 0; i < response.data.partTwo.length/5; i++) {
-    const div = document.createElement("div");
-    const ul = document.createElement("ul");
-    document.querySelector(".glide__slides").appendChild(div);
-    div.appendChild(ul);
-    div.setAttribute("class", "glide__slide");
-    ul.setAttribute("class", "glide-ul")
+  //div to ul
+  for (let j = 0; j < 3; j++) {
+    console.log(`Appending to .loop index ${j}`);
+    //div.slide > ul
+    //Math.floor(response.data.partTwo.length/5)
+    for (let i = 0; i < 2; i++) {
+      console.log(`Creating div for item ${i}`);
+      const div = document.createElement("div");
+      const ul = document.createElement("ul");
+      document.querySelectorAll(".loop")[j].appendChild(div);
+      div.appendChild(ul);
+      div.setAttribute("class", "glide__slide");
+      ul.setAttribute("class", "glide-ul");
+    }
   }
-  response.data.partTwo.forEach((v,i) => {
-    //div > ul > li > a > figure, p1, p2
-    //if (li 1~5) {div > ul > li 5개}
-    //p2 > span1, span2
-    const li = document.createElement("li");
-    const a = document.createElement("a");
-    const figure = document.createElement("figure");
-    const p1 = document.createElement("p");
-    const p2 = document.createElement("p");
-    const span1 = document.createElement("span");
-    const span2 = document.createElement("span");
-    
-    //0->0, 5->1, 10->2
-    document.querySelectorAll(".glide-ul")[Math.floor(i/5)].appendChild(li);
-    li.appendChild(a);
-    a.appendChild(figure);
-    a.appendChild(p1);
-    a.appendChild(p2);
-    p2.appendChild(span1);
-    p2.appendChild(span2);
 
+  for (let j = 0; j < 6; j++) {
+    for (let i = 0; i < ((j<4)?5:4); i++) {
+      const li = document.createElement("li");
+      document.querySelectorAll(".glide-ul")[j].appendChild(li);
+      console.log(`append li to ul ${j}`);
+      li.setAttribute("class", "bunchOfLis");
+    }
+  }
+
+  for (let j = 0; j < 1; j++) { 
+    response.data.partTwo.forEach((v,i) => {
+      //div > ul > li > a > figure, p1, p2
+      //if (li 1~5) {div > ul > li 5개}
+      //p2 > span1, span2
+      const a = document.createElement("a");
+      const figure = document.createElement("figure");
+      const p1 = document.createElement("p");
+      const p2 = document.createElement("p");
+      const span1 = document.createElement("span");
+      const span2 = document.createElement("span");
+
+      document.querySelectorAll(".bunchOfLis")[i].appendChild(a);
+      console.log(`append a to li ${i}`);
+      a.appendChild(figure);
+      a.appendChild(p1);
+      a.appendChild(p2);
+      p2.appendChild(span1);
+      p2.appendChild(span2);
+
+      const img = document.createElement("img");
+
+      figure.appendChild(img);
+
+      a.setAttribute("class", "part-two-a");
+      figure.setAttribute("class", "part-two-figure");
+      img.setAttribute("src", response.data.partTwo[i].img);
+      img.setAttribute("alt", response.data.partTwo[i].alt);
+
+      p1.innerHTML = response.data.partTwo[i].title;
+      span1.innerHTML = response.data.partTwo[i].price1;
+      span2.innerHTML = response.data.partTwo[i].price2;
+    })
+  }
+
+  response.data.footerGlider.forEach((v,i) => {
+    const li = document.createElement("li");
     const img = document.createElement("img");
 
-    figure.appendChild(img);
+    document.querySelector(".glide-ul2").appendChild(li);
+    li.appendChild(img);
 
-    a.setAttribute("class", "part-two-a");
-    figure.setAttribute("class", "part-two-figure");
-    img.setAttribute("src", response.data.partTwo[i].img);
-    img.setAttribute("alt", response.data.partTwo[i].alt);
-
-    p1.innerHTML = response.data.partTwo[i].title;
-    span1.innerHTML = response.data.partTwo[i].price1;
-    span2.innerHTML = response.data.partTwo[i].price2;
-  })
+    li.setAttribute("class", "glide__slide");
+    img.setAttribute("src", response.data.footerGlider[i].img);
+    img.setAttribute("alt", response.data.footerGlider[i].alt);
+  });
 
   document.querySelectorAll(".glide").forEach((v,i) => {
     v.insertAdjacentHTML('beforeend',`
@@ -119,10 +148,16 @@ window.addEventListener("load",async  e => {
             </button>
           </div>`);
   })
-  const glide = new Glide('.glide');
-  glide.mount();
-  // const splide = new Splide( '.splide' );
-  // splide.mount();
+  
+  var sliders = document.querySelectorAll('.glide');
+
+  for (var i = 0; i < sliders.length; i++) {
+    var glide = new Glide(sliders[i], {
+      gap: 15,
+    });
+    
+    glide.mount();
+  }
 
   //most likely due to how and when the library attaches its event listeners.
 });
