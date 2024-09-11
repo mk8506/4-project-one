@@ -7,10 +7,13 @@
   <link rel="stylesheet" href="./assets/css/reset.css"/>
   <link rel="stylesheet" href="./assets/css/common.css"/>
   <link rel="stylesheet" href="./assets/css/list.css"/>
+  <link rel="stylesheet" href="./assets/css/glider.css"/>
   <link rel="stylesheet" href="./assets/css/glide.core.min.css"/>
   <link rel="stylesheet" href="./assets/css/glide.theme.min.css"/>
 </head>
-<body>
+<body>  
+  <div w3-include-html="header.html"></div>
+
   <main class="width">
     <div class="part-first center">
       <h1 style="font-size: 26px; padding: 20px 0;">Shop For Boys</h1>
@@ -94,13 +97,21 @@
     </div>
 
     <div class="part-fourth">
-      <h1></h1>
-      <p></p>
+      <h1>BOY'S CLOTHING</h1>
+      <p>
+        At Old Navy, shopping for boys’ clothes is fun, easy and affordable. Find fashion essentials and back to school clothing staples, including boys' jeans, graphic t-shirts, hoodies and boys' school uniform basics like polo shirts and khaki uniform pants.<br/><br/>
+        Discover boys' new arrivals to keep him cozy, from warm coats & jackets for boys to classic sweaters and pants. You'll also find his favorite boys' styles in a range of extended sizes, including boys slim and boys husky clothes.<br/><br/>
+        Keep him moving with boy's workout clothes from Old Navy Active. Our basketball shorts, t-shirts, tank tops and athletic clothes combine classic comfort with the latest performance technology. And when it's time for a break, we've got him covered with cozy pajamas, sweatshirts, hoodies, & sweatpants.
+      </p>
     </div>
+
+    <div w3-include-html="footer.html"></div>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script src="./assets/js/list.js"></script>
+  <script src="./assets/js/import.js"></script>
+  <script src="./assets/js/glider.js"></script>
 </body>
 </html>

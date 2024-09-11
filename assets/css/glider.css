@@ -1,0 +1,63 @@
+/*glider*/
+
+button.glide__arrow.glide__arrow--right.one-arrow-right {
+  height: 100%;
+	right: -1.5em;
+  top: 50%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+button.glide__arrow.glide__arrow--left.one-arrow-left {
+  height: 100%;
+	left: -1.5em;
+  top: 50%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+}
+.glide.glide--ltr.glide--slider.glide--swipeable {
+  width: auto;
+  max-width: 1265px;
+}
+div.glide__slide.glide__slide--active {
+  max-width: 1265px;
+  margin: 0;
+  padding: 0;
+}
+
+.glide {
+  margin: 20px 20px;
+}
+
+.glide-ul {
+  display: flex;
+  flex-direction: row;
+
+  li {
+    margin-left: 16px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.glide__slide {
+  padding: 0 8px;
+  width: 100%;
+}
+
+.glide__arrow {
+
+  img {
+    filter: invert(100%);
+  }
+}
+.left-arrow {
+  transform: scaleX(-1);
+}

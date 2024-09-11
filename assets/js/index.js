@@ -123,7 +123,7 @@ window.addEventListener("load",async  e => {
     span2.innerHTML = v.price2;
   })
   
-
+  //반복되는 코드
   response.data.footerGlider.forEach((v,i) => {
     const li = document.createElement("li");
     const img = document.createElement("img");
@@ -136,18 +136,6 @@ window.addEventListener("load",async  e => {
     img.setAttribute("alt", response.data.footerGlider[i].alt);
   });
 
-  document.querySelectorAll(".glide").forEach((v,i) => {
-    v.insertAdjacentHTML('beforeend',`
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left one-arrow-left" data-glide-dir="<">
-              <img src="./assets/img/icons/arrow.gif" alt="left arrow" class="left-arrow"/>
-            </button>
-            <button class="glide__arrow glide__arrow--right one-arrow-right" data-glide-dir=">">
-              <img src="./assets/img/icons/arrow.gif" alt="right arrow"/>
-            </button>
-          </div>`);
-  })
-  
   var sliders = document.querySelectorAll('.glide');
 
   for (var i = 0; i < sliders.length; i++) {

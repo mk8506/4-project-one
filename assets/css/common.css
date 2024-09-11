@@ -14,11 +14,14 @@ main, footer {
   height: 41px;
   justify-content: space-between;
 
+  .top-div {
+    max-width: 1400px;
+    justify-content: space-between;
+  }
+
   p {
     color: white;
     font-size: 11px;
-  }
-  .top-p {
     margin-top: 14px;
   }
 }
@@ -40,38 +43,96 @@ main, footer {
 
 /*nav*/
 
+.sitewide-nav {
+  max-width: 1550px;
+  border-bottom: 1px solid rgb(78, 78, 78);
+}
+
 .nav-left {
-  padding: 40px 10px;
+  padding: 40px 10px 30px 10px;
+  width: 83%;
+  justify-content: space-between;
 
   .logo-container {
     width: 95px;
     height: 30px;
-
-
+    margin-top: -10px;
   }
 
   .nav-a {
     display: inline-block;
     padding: 0 8px;
     text-decoration: none;
+    color: rgb(65, 65, 65);
+    letter-spacing: 1px;
   }
 }
 
 .nav-right {
+  width: 17%;
+  margin-top: 8px;
   
   .in-nav {
     justify-content: space-between;
   
-    p {
+    a {
       width: 60px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  form {
+    border-bottom: 1px solid black; padding-bottom: 8px;
+    height: 36px;
+
+    input {
+      width: 87%;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background: transparent;
+    }
+
+    button {
+      width: 13%;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background: transparent;
     }
   }
 }
 
 /*footer*/
 
-footer {
+/*part three*/
 
+.part-three {
+  padding: 32px 0;
+  width: 800px;
+  margin: auto;
+  justify-content: space-evenly;
+
+  h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+.four-logos-container {
+  width: 400px;
+  padding-top: 40px;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+  }
 }
 
 .subscribe {
@@ -81,7 +142,7 @@ footer {
   padding: 55px;
 
   .glide {
-    width: 500px;
+    width: 200px;
   }
   
   .glide__slide {

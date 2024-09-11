@@ -1,4 +1,8 @@
+
 window.addEventListener("load",async  e => {
+  //const extern = document.querySelector("#header-import").import;
+  //document.querySelector("#header").insertAdjacentHTML('afterbegin', extern.getElementsByTagName("body")[0]);
+
   let response = null;
   try {
     response = await axios.get("../assets/js/dataList.json");
@@ -79,18 +83,36 @@ window.addEventListener("load",async  e => {
     span2.innerHTML = v.price2;
   });
 
-  //button
-  document.querySelectorAll(".glide").forEach((v,i) => {
-    v.insertAdjacentHTML('beforeend',`
-          <div class="glide__arrows" data-glide-el="controls">
-            <button class="glide__arrow glide__arrow--left one-arrow-left" data-glide-dir="<">
-              <img src="./assets/img/icons/arrow.gif" alt="left arrow" class="left-arrow"/>
-            </button>
-            <button class="glide__arrow glide__arrow--right one-arrow-right" data-glide-dir=">">
-              <img src="./assets/img/icons/arrow.gif" alt="right arrow"/>
-            </button>
-          </div>`);
+  //반복되는 코드
+  let response1 = null;
+  try {
+    response1 = await axios.get("../assets/js/data.json");
+    console.log(response.data);
+  } catch (error) {
+    console.error(error.code +"\n"+ error.message);
+    let alertThis = error.message;
+    if (error.response !== undefined) {
+      const add = error.response.status +"\n"+ error.response.statusText;
+      console.error(add);
+      alertThis += "\n"+ add;
+    }
+    alert(alertThis);
+    return;
+  }
+
+  response1.data.footerGlider.forEach((v,i) => {
+    const li = document.createElement("li");
+    const img = document.createElement("img");
+
+    document.querySelector(".glide-ul2").appendChild(li);
+    li.appendChild(img);
+
+    li.setAttribute("class", "glide__slide");
+    img.setAttribute("src", response1.data.footerGlider[i].img);
+    img.setAttribute("alt", response1.data.footerGlider[i].alt);
   });
+
+
 
   var sliders = document.querySelectorAll('.glide');
 
