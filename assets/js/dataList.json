@@ -1,0 +1,126 @@
+{
+  "partFirst": [
+    {
+      "id": 101,
+      "img": "./assets/img/boys/NewArrival.png"
+    },
+    {
+      "id": 102,
+      "img": "./assets/img/boys/sale.png"
+    }
+  ],
+  "partSecond": [
+    {
+      "id": 101,
+      "img": "./assets/img/boys/partSecond/one.png",
+      "title": "GRAPHIC TEES & T-SHIRTS"
+    },
+    {
+      "id": 102,
+      "img": "./assets/img/boys/partSecond/two.png",
+      "title": "SHORTS"
+    },
+    {
+      "id": 103,
+      "img": "./assets/img/boys/partSecond/three.png",
+      "title": "ACTIVEWEAR"
+    },
+    {
+      "id": 104,
+      "img": "./assets/img/boys/partSecond/four.png",
+      "title": "SWEATSHIRTS & SWEATPANTS"
+    },
+    {
+      "id": 201,
+      "img": "./assets/img/boys/partSecond/five.png",
+      "title": "SWIM"
+    },
+    {
+      "id": 202,
+      "img": "./assets/img/boys/partSecond/six.png",
+      "title": "POLOS"
+    },
+    {
+      "id": 203,
+      "img": "./assets/img/boys/partSecond/seven.png",
+      "title": "PANTS"
+    },
+    {
+      "id": 204,
+      "img": "./assets/img/boys/partSecond/eight.png",
+      "title": "JEANS"
+    }
+  ],
+  "partThird": [
+    {
+      "id": 101,
+      "img": "./assets/img/boys/partThird/one.jpg",
+      "title": "Jacket",
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 102,
+      "img": "./assets/img/boys/partThird/one.jpg",
+      "title": "Jacket",
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 103,
+      "img": "./assets/img/boys/partThird/one.jpg",
+      "title": "Jacket",
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 104,
+      "img": "./assets/img/boys/partThird/one.jpg",
+      "title": "Jacket",
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 105,
+      "img": "./assets/img/boys/partThird/one.jpg",
+      "title": "Jacket",
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 106,
+      "img": "./assets/img/boys/partThird/one.jpg",
+      "title": "Jacket",
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 107,
+      "img": "./assets/img/boys/partThird/one.jpg",
+      "title": "Jacket",
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 108,
+      "img": "./assets/img/boys/partThird/one.jpg",
+      "title": "Jacket",
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 109,
+      "img": "./assets/img/boys/partThird/one.jpg",
+      "title": "Jacket",
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    },
+    {
+      "id": 110,
+      "img": "./assets/img/boys/partThird/one.jpg",
+      "title": "Jacket",
+      "price1": "&dollar;39.99",
+      "price2": "&dollar;23.99"
+    }
+  ]
+}

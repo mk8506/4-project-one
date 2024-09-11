@@ -1,0 +1,70 @@
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.width {
+  max-width: 1300px;
+}
+
+/*part first*/
+
+.part-first {
+
+  .main-photo-container {
+  }
+  .main-photo {
+    margin: 8px 4px;
+    background-repeat: no-repeat;
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center; 
+  }
+}
+
+/*part second*/
+
+.part-second {
+
+  ul {
+    margin-top: 20px;
+  }
+
+  li {
+    margin: 8px 4px;
+  }
+
+  .second-title {
+    font-weight: bold;
+  }
+
+  button {
+    margin: 40px 0;
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 16px;
+    border-radius: 5px;
+  }
+}
+
+/*part third*/
+
+/*arrows are way down there. I'll fix that too*/
+.part-thrid {
+
+  h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+}
+
+/*part fourth*/
+
+/*왜 좌 패딩이 저리 많지 I'll fix it myself*/
+.part-fourth {
+
+}

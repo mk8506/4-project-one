@@ -90,40 +90,39 @@ window.addEventListener("load",async  e => {
     }
   }
 
-  for (let j = 0; j < 1; j++) { 
-    response.data.partTwo.forEach((v,i) => {
-      //div > ul > li > a > figure, p1, p2
-      //if (li 1~5) {div > ul > li 5개}
-      //p2 > span1, span2
-      const a = document.createElement("a");
-      const figure = document.createElement("figure");
-      const p1 = document.createElement("p");
-      const p2 = document.createElement("p");
-      const span1 = document.createElement("span");
-      const span2 = document.createElement("span");
+  response.data.partTwo.forEach((v,i) => {
+    //div > ul > li > a > figure, p1, p2
+    //if (li 1~5) {div > ul > li 5개}
+    //p2 > span1, span2
+    const a = document.createElement("a");
+    const figure = document.createElement("figure");
+    const p1 = document.createElement("p");
+    const p2 = document.createElement("p");
+    const span1 = document.createElement("span");
+    const span2 = document.createElement("span");
 
-      document.querySelectorAll(".bunchOfLis")[i].appendChild(a);
-      console.log(`append a to li ${i}`);
-      a.appendChild(figure);
-      a.appendChild(p1);
-      a.appendChild(p2);
-      p2.appendChild(span1);
-      p2.appendChild(span2);
+    document.querySelectorAll(".bunchOfLis")[i].appendChild(a);
+    console.log(`append a to li ${i}`);
+    a.appendChild(figure);
+    a.appendChild(p1);
+    a.appendChild(p2);
+    p2.appendChild(span1);
+    p2.appendChild(span2);
 
-      const img = document.createElement("img");
+    const img = document.createElement("img");
 
-      figure.appendChild(img);
+    figure.appendChild(img);
 
-      a.setAttribute("class", "part-two-a");
-      figure.setAttribute("class", "part-two-figure");
-      img.setAttribute("src", response.data.partTwo[i].img);
-      img.setAttribute("alt", response.data.partTwo[i].alt);
+    a.setAttribute("class", "part-two-a");
+    figure.setAttribute("class", "part-two-figure");
+    img.setAttribute("src", v.img);
+    img.setAttribute("alt", v.alt);
 
-      p1.innerHTML = response.data.partTwo[i].title;
-      span1.innerHTML = response.data.partTwo[i].price1;
-      span2.innerHTML = response.data.partTwo[i].price2;
-    })
-  }
+    p1.innerHTML = v.title;
+    span1.innerHTML = v.price1;
+    span2.innerHTML = v.price2;
+  })
+  
 
   response.data.footerGlider.forEach((v,i) => {
     const li = document.createElement("li");
@@ -141,10 +140,10 @@ window.addEventListener("load",async  e => {
     v.insertAdjacentHTML('beforeend',`
           <div class="glide__arrows" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left one-arrow-left" data-glide-dir="<">
-              <img src="./assets/img/icons/arrow.svg" alt="left arrow"/>
+              <img src="./assets/img/icons/arrow.gif" alt="left arrow" class="left-arrow"/>
             </button>
             <button class="glide__arrow glide__arrow--right one-arrow-right" data-glide-dir=">">
-              <img src="./assets/img/icons/arrow.svg" alt="right arrow" class="right-arrow"/>
+              <img src="./assets/img/icons/arrow.gif" alt="right arrow"/>
             </button>
           </div>`);
   })
