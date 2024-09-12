@@ -1,3 +1,7 @@
+html {
+  overflow: hidden scroll;
+}
+
 main, footer {
   max-width: 1440px;
   margin: auto;
@@ -17,6 +21,14 @@ main, footer {
   .top-div {
     max-width: 1400px;
     justify-content: space-between;
+
+    & div p {
+      padding-right: 10px;
+      margin: 3px 0 0 0;
+      border-right: 1px solid white;
+      text-align: left;
+      font-size: 12px;
+    }
   }
 
   p {
@@ -32,7 +44,7 @@ main, footer {
   height: 38px;
 
   a {
-    padding: 13px;
+    padding: 11px 13px 13px 13px;
   }
 
   img {
@@ -45,7 +57,22 @@ main, footer {
 
 .sitewide-nav {
   max-width: 1550px;
+  width: 100%;
   border-bottom: 1px solid rgb(78, 78, 78);
+  background-color: white;
+}
+
+.scrollup-nav {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.scrollup {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 9999;
 }
 
 .nav-left {
@@ -70,6 +97,7 @@ main, footer {
 
 .nav-right {
   width: 17%;
+  padding-right: 20px;
   margin-top: 8px;
   
   .in-nav {
@@ -212,19 +240,32 @@ main, footer {
 
 
 .policy {
+  margin-bottom: 60px;
+
   div {
     text-align: center;
   }
 }
 
 .fixed-bottom {
+  position: fixed;
+  top: calc(100vh - 50px);
+  max-width: 1440px;
   text-align: center;
-  margin: auto;
-  width: 300px;
-  background-color: rgb(22, 17, 17);
+  
+  div {
+    background-color: rgb(51, 51, 51);
+    border-radius: 5px 5px 0px 0px;
+    width: 500px;
+    height: 50px;
+    padding: 8px 10px;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
 
-  p {
-    text-align: center;
-    color: white;
+    p {
+      text-align: center;
+      color: white;
+    }
   }
 }

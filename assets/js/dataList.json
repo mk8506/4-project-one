@@ -122,5 +122,32 @@
       "price1": "&dollar;39.99",
       "price2": "&dollar;23.99"
     }
+  ],
+  "partDul": [
+    {
+      "id": 101,
+      "img": "./assets/img/boys/partSecond/eight.png",
+      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
+    },
+    {
+      "id": 102,
+      "img": "./assets/img/boys/partSecond/eight.png",
+      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
+    },
+    {
+      "id": 103,
+      "img": "./assets/img/boys/partSecond/eight.png",
+      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
+    },
+    {
+      "id": 104,
+      "img": "./assets/img/boys/partSecond/eight.png",
+      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
+    },
+    {
+      "id": 105,
+      "img": "./assets/img/boys/partSecond/eight.png",
+      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
+    }
   ]
 }

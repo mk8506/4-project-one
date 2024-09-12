@@ -43,6 +43,17 @@ window.addEventListener("load",async  e => {
     img.setAttribute("alt", response.data.partOne[i].alt);
     h1.setAttribute("class", "part-one-h1");
     divBtn.setAttribute("class", "divBtn");
+
+    // //btn ul
+    // divBtn.setAttribute("class", "menu-container");
+    // const btnUl = document.createElement("ul");
+    // div.Btn.appendChild("btnUl");
+    // btnUl.setAttribute("class", "menu");
+    // for (let i = 0; i < 4; i++) {
+    //   const btnLi = document.createElement("li");
+    //   btnUl.appendChild("btnLi");
+    //   btnLi.innerHTML = "Girls";
+    // }
     
     h1.innerHTML = response.data.partOne[i].title;
     btn1.innerHTML = response.data.partOne[i].button1;

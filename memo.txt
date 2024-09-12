@@ -22,3 +22,19 @@ https://oldnavy.gap.com/Asset_Archive/ONWeb/content/static-marketing/footer-asse
 https://oldnavy.gap.com/Asset_Archive/ONWeb/content/static-marketing/navyist/Navyist_logo.svg
 https://oldnavy.gap.com/Asset_Archive/assets/privacyoptions.svg
 
+THE PROBLEM: 
+div > div (items가 연결되어 있어서 active만 좌우 크기를 줄일 수 없음) > items
+
+index == gap
+list == division
+category
+item == product
+
+-------------------------Api
+
+매서드  url
+GET  .json
+id로 json data 가져오기 -> js로 html 자리에 넣기
+이름	타입	설명	필수
+query	String	검색을 원하는 질의어	O
+=> go to json data

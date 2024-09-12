@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>list</title>
   <link rel="stylesheet" href="./assets/css/reset.css"/>
   <link rel="stylesheet" href="./assets/css/common.css"/>
   <link rel="stylesheet" href="./assets/css/list.css"/>
   <link rel="stylesheet" href="./assets/css/glider.css"/>
+  <link rel="stylesheet" href="./assets/css/dropdown.css"/>
   <link rel="stylesheet" href="./assets/css/glide.core.min.css"/>
   <link rel="stylesheet" href="./assets/css/glide.theme.min.css"/>
 </head>
@@ -80,7 +81,17 @@
           <p class="second-title center"></p>
         </li>
       </ul>
-      <button type="button">ALL CATEGORIES +</button>
+
+      
+      <div class="menu-container center">
+        <button class="menu-button" type="button">ALL CATEGORIES <span>+</span></button>
+        <ul class="menu center">
+          <li><a href="#">All tops</a></li>
+          <li><a href="#">Tees</a></li>
+          <li><a href="#">Sweaters</a></li>
+          <li><a href="#">Pants</a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="part-third">
@@ -92,8 +103,8 @@
 
           </div>
         </div>
-        <!--arrows-->
       </div>
+      <!--arrows-->
     </div>
 
     <div class="part-fourth">
@@ -111,7 +122,9 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script src="./assets/js/list.js"></script>
+  <script src="./assets/js/common.js"></script>
   <script src="./assets/js/import.js"></script>
   <script src="./assets/js/glider.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
 </body>
 </html>
