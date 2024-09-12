@@ -21,13 +21,11 @@ button.glide__arrow.glide__arrow--left.one-arrow-left {
   background: transparent;
 }
 .glide.glide--ltr.glide--slider.glide--swipeable {
-  width: auto;
   max-width: 1265px;
 }
 div.glide__slide.glide__slide--active {
   max-width: 1265px;
   margin: 0;
-  padding: 0;
 }
 
 .glide {

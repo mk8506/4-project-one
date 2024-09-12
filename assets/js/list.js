@@ -87,7 +87,7 @@ window.addEventListener("load",async  e => {
   let response1 = null;
   try {
     response1 = await axios.get("../assets/js/data.json");
-    console.log(response.data);
+    console.log(response1.data);
   } catch (error) {
     console.error(error.code +"\n"+ error.message);
     let alertThis = error.message;

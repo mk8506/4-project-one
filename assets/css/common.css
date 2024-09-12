@@ -136,22 +136,29 @@ main, footer {
 }
 
 .subscribe {
-  justify-content: space-around;
+  justify-content: space-between;
   flex-basis: auto;
   border-top: 3px solid black;
-  padding: 55px;
+
+  .subscribe-three {
+    border-right: 1px solid rgb(155, 155, 155); 
+    flex: 1 1 0;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  form {
+    margin-top: 36px;
+  }
 
   .glide {
-    width: 200px;
+    width: 100%;
   }
   
   .glide__slide {
-    width: 100px;
-    height: 80px;
 
-    img {
-      width: 200px;
-    }
   }
 }
 

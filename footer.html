@@ -6,7 +6,7 @@
   <title>Document</title>
 </head>
 <body>
-      <!--from here sitewide-->
+    <!--from here sitewide-->
     <!--part three: p, img-->
     <div class="part-three flex"><!--click -> popup-->
       <div>
@@ -21,39 +21,49 @@
   </main>
 
   <footer>
-    <div class="subscribe flex">
-      <!--email-->
-      <div>
-        <h2>SIGN UP FOR EMAIL</h2>
-        <p>Be the first to know about new arrivals, buzzy sales, & other very nice things.</p>
-        <form>
-          <input type="email"/>
-          <button type="submit">JOIN</button>
-        </form>
-      </div>
-      <!--mobile number-->
-      <div>
-        <img/>
-        <div>
-          <img/>
+    <div class="subscribe">
+      <div class="flex" style="margin-bottom: 20px; width: 100%;">
+        <!--email-->
+        <div class="subscribe-three" style="padding: 115px 58px 0 58px">
+          <h2>SIGN UP FOR EMAIL</h2>
+          <p>Be the first to know about new arrivals, buzzy sales, & other very nice things.</p>
           <form>
-            <input type="number"/>
-            <button type="submit">SUBMIT</button>
+            <input type="email"/>
+            <button type="submit">JOIN</button>
           </form>
         </div>
-        <p>By entering~</p>
-      </div>
-      <!--learn more IMportant*-->
-      <div>
-        <!--gilder library-->
-        <div class="glide">
-          <div class="glide__track" data-glide-el="track">
-            <ul class="glide__slides glide-ul2">
-              <!--here comes js-->
-
-            </ul>
+        <!--mobile number-->
+        <div class="subscribe-three">
+          <img/>
+          <div>
+            <img/>
+            <form>
+              <input type="number"/>
+              <button type="submit">SUBMIT</button>
+            </form>
           </div>
-          <!--arrows-->
+          <p>By entering~</p>
+        </div>
+        <!--learn more IMportant*-->
+        <div class="subscribe-three">
+          <!--gilder library-->
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides glide-ul2">
+                <!--here comes js-->
+
+              </ul>
+            </div>
+            <!--arrows--> <!--반복되는 코드-->
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left one-arrow-left" data-glide-dir="<">
+                <img src="./assets/img/icons/arrow.gif" alt="left arrow" class="left-arrow"/>
+              </button>
+              <button class="glide__arrow glide__arrow--right one-arrow-right" data-glide-dir=">">
+                <img src="./assets/img/icons/arrow.gif" alt="right arrow"/>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

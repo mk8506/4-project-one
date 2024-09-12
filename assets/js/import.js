@@ -27,3 +27,4 @@ function includeHTML() {
 }
 
 includeHTML();
+console.log("footer.html loading finished");
