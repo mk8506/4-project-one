@@ -4,8 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>category</title>
+  <link rel="stylesheet" href="./assets/css/reset.css"/>
+  <link rel="stylesheet" href="./assets/css/common.css"/>
+  <link rel="stylesheet" href="./assets/css/category.css"/>
+  <link rel="stylesheet" href="./assets/css/glider.css"/>
+  <link rel="stylesheet" href="./assets/css/dropdown.css"/>
+  <link rel="stylesheet" href="./assets/css/glide.core.min.css"/>
+  <link rel="stylesheet" href="./assets/css/glide.theme.min.css"/>
 </head>
 <body>
-  
+  <div w3-include-html="header.html"></div>
+
+  <main>
+    <p>Boys / Sale: Hundreds Of 50% Off Deals</p>
+    <h1></h1>Sale: Hundreds of 50% off Deals</h1>
+    <div class="flex">
+      <button class="buttons" type="button">All Filters</button>
+      <button class="buttons" type="button">Department</button>
+      <button class="buttons" type="button">Category</button>
+      <button class="buttons" type="button">Price</button>
+      <button class="buttons" type="button">Sleeve Length</button>
+      <p id="num-items" style="font-size: 14px; padding: 10px;"></p>
+      <select style="margin-left: auto;">
+        <option>Featured</option>
+        <option>New</option>
+        <option>Price:Low-High</option>
+        <option>Price:High-Low</option>
+      </select>
+    </div>
+
+    <div>
+      <ul id="items" class="flex">
+
+      </ul>
+    </div>
+
+  </main>
+
+  <div w3-include-html="footer.html"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+  <script src="./assets/js/util.js"></script>
+  <script src="./assets/js/category.js"></script>
+  <script src="./assets/js/common.js"></script>
+  <script src="./assets/js/import.js"></script>
+  <script src="./assets/js/glider.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
 </body>
 </html>

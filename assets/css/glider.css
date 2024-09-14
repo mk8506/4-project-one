@@ -21,15 +21,19 @@ button.glide__arrow.glide__arrow--left.one-arrow-left {
   background: transparent;
 }
 .glide.glide--ltr.glide--slider.glide--swipeable {
-  max-width: 1265px;
+  /* max-width: 1265px; */
 }
 div.glide__slide.glide__slide--active {
-  max-width: 1265px;
-  margin: 0;
+  /* max-width: 1265px;
+  margin: 0; */
 }
 
 .glide {
-  margin: 20px 20px;
+  margin-bottom: 20px;
+}
+
+.glide__slides {
+  height: auto;
 }
 
 .glide-ul {
@@ -47,7 +51,6 @@ div.glide__slide.glide__slide--active {
 
 .glide__slide {
   padding: 0 8px;
-  width: 100%;
 }
 
 .glide__arrow {

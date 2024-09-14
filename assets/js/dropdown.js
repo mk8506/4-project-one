@@ -4,13 +4,15 @@ menus.forEach((v,i) => {
   button.addEventListener('click', (e) => {
     const sub = v.querySelectorAll(".menu")[i];
     const btnSpan = button.querySelector("span");
-    if (sub.style.maxHeight === '0px') {
+    console.log(sub.style.maxHeight);
+    if (sub.style.maxHeight === '0px' || sub.style.maxHeight === "") {
       sub.style.maxHeight = sub.scrollHeight + 'px';
       btnSpan.innerHTML = "-";
       console.log("click open");
     } else {
       sub.style.maxHeight = '0px';
       btnSpan.innerHTML = "+";
+      console.log("click close");
     }
   });
 });

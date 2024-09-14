@@ -18,31 +18,33 @@
 
     <!--hana-->
     <div class="boxes">
-      <div class="fixed-container">
+      <div class="item-container">
 
         <!--fixed-->
-        <div class="fixed" style="width: 66%;">
-          <p style="padding: 1.75rem 0px 1.563rem 1.813rem;">Girls / Graphic Tees & T-shirts</p>
-          <div class="flex">
-            <div style="width: 14%; padding: 0 10px;">
-              <a href="#">
-                <figure style="width:98%">
-                  <img src="./assets/img/itemPage/main-photo.avif" alt="main-photo" style="border: 1px solid black"/>
-                </figure>
-              </a>
+        <div class="fixed-container">
+          <div class="fixed">
+            <p style="padding: 1.75rem 0px 1.563rem 1.813rem;">Girls / Graphic Tees & T-shirts</p>
+            <div class="flex">
+              <div style="width: 14%; padding: 0 10px;">
+                <a href="#">
+                  <figure style="width:98%">
+                    <img class="main-img" alt="main-photo" style="border: 1px solid black"/>
+                  </figure>
+                </a>
+              </div>
+              <figure style="width:86%">
+                <img class="main-img" alt="main-photo"/>
+              </figure>
             </div>
-            <figure style="width:86%">
-              <img src="./assets/img/itemPage/main-photo.avif" alt="main-photo"/>
-            </figure>
           </div>
         </div>
 
 
         <!--details-->
         <div class="details" style="padding: 64px 24px 0 24px; width: 34%">
-          <h1 style="font-size: 26px;">Softest Short-Sleeve Heart-Pocket T-Shirt for Girls</h1>
+          <h1 id="title" style="font-size: 26px;"></h1>
           <div class="flex">
-            <p>$9.99 $5.99<br/>40% Off</p>
+            <p><span id="price1"></span><span id="price2"></span></p>
           </div>
           <p>Color: rusty torch</p>
           <p>Product details may vary by color</p>
@@ -50,8 +52,8 @@
             <img/><img/><img/><img/><img/>
           </div>
           <div class="flex">
-            <h2>Regular</h2>
-            <h2>Plus</h2>
+            <h5>Regular</h5>
+            <h5>Plus</h5>
           </div>
           <p>SIZE GUIDE</p>
           <div>Select a size for pickup options</div>
@@ -107,19 +109,19 @@
     </div>
 
     <!--dul-->
-    <div>
+    <div class="dul">
       <div class="boxes">
-        <h1>Customers Also Liked</h1>
+        <h2 class="center">CUSTOMERS ALSO LIKED</h2>
         <ul class="flex">
-
           <li>
             <a href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
               <p class="dul-title"></p>
+              <p>Kids Sale Deal</p>
             </a>
-            <button><img/></button>
+            <button><img src="./assets/img/icons/bagplus.png"/></button>
           </li>
           <li>
             <a href="#">
@@ -127,8 +129,9 @@
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
               <p class="dul-title"></p>
+              <p>Kids Sale Deal</p>
             </a>
-            <button><img/></button>
+            <button><img src="./assets/img/icons/bagplus.png"/></button>
           </li>
           <li>
             <a href="#">
@@ -136,8 +139,9 @@
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
               <p class="dul-title"></p>
+              <p>Kids Sale Deal</p>
             </a>
-            <button><img/></button>
+            <button><img src="./assets/img/icons/bagplus.png"/></button>
           </li>
           <li>
             <a href="#">
@@ -145,8 +149,9 @@
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
               <p class="dul-title"></p>
+              <p>Kids Sale Deal</p>
             </a>
-            <button><img/></button>
+            <button><img src="./assets/img/icons/bagplus.png"/></button> 
           </li>
           <li>
             <a href="#">
@@ -154,12 +159,9 @@
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
               <p class="dul-title"></p>
+              <p>Kids Sale Deal</p>
             </a>
-            <button><img/></button>
-          </li>
-
-
-
+            <button><img src="./assets/img/icons/bagplus.png"/></button></li>
         </ul>
       </div>
     </div>
@@ -274,8 +276,8 @@
 
 
     <!--sam-->
-    <div class="boxes">
-      <h1>REVIEWS</h1>
+    <div class="part-sam boxes">
+      <h2 class="center">REVIEWS</h2>
       <div class="flex">
         <div><img/><span>5 Star Ratings</span></div>
         <div>
@@ -286,19 +288,28 @@
             <p>3</p>
           </div>
         </div>
-        <div>
-          <div>WRITE THE REVIEW</div>
-        </div>
+        <a id="review" href="#">WRITE THE REVIEW</a>
       </div>
+      <figure>
+        <img src="./assets/img/itemPage/review-graph.png" alt="review-graph"/>
+      </figure>
       <p>1 Customer Review</p>
       <hr/>
 
       <p>Sort By</p>
       <form class="flex">
         <select>
-          <option></option>
+          <option>Highest Rate</option>
+          <option>Most Recent</option>
+          <option>Most Helpful</option>
+          <option>lowest Rate</option>
+          <option>Oldest</option>
+          <option>Images</option>
         </select>
-        <input type="text"/>
+        <div>
+          <input type="text"/>
+          <button type="submit"><img src="./assets/img/icons/rg.svg" alt="find button"/></button>
+        </div>
       </form>
 
       <!--reviews-->

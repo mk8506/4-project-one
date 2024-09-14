@@ -38,3 +38,14 @@ id로 json data 가져오기 -> js로 html 자리에 넣기
 이름	타입	설명	필수
 query	String	검색을 원하는 질의어	O
 => go to json data
+
+
+--------- 연결
+index -header -> list.html
+list.html -button.all for boys -> category.html
+category -> item.html
+
+
+----------to do
+1. slide css
+1. list.html 연결 정리

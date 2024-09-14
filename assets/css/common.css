@@ -1,11 +1,4 @@
-html {
-  overflow: hidden scroll;
-}
 
-main, footer {
-  max-width: 1440px;
-  margin: auto;
-}
 
 /*header*/
 
@@ -45,6 +38,10 @@ main, footer {
 
   a {
     padding: 11px 13px 13px 13px;
+
+    &:nth-child(2) {
+      background-color: white;
+    }
   }
 
   img {
@@ -59,16 +56,9 @@ main, footer {
   max-width: 1550px;
   width: 100%;
   border-bottom: 1px solid rgb(78, 78, 78);
-  background-color: white;
-}
+  background-color:white;
 
-.scrollup-nav {
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-
-.scrollup {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -250,6 +240,7 @@ main, footer {
 .fixed-bottom {
   position: fixed;
   top: calc(100vh - 50px);
+  z-index: 9998;
   max-width: 1440px;
   text-align: center;
   

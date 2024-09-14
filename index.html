@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./assets/css/common.css"/>
   <link rel="stylesheet" href="./assets/css/index.css"/>
   <link rel="stylesheet" href="./assets/css/glider.css"/>
+  <link rel="stylesheet" href="./assets/css/dropdown.css"/>
   <link rel="stylesheet" href="./assets/css/glide.core.min.css"/>
   <link rel="stylesheet" href="./assets/css/glide.theme.min.css"/>
 </head>
@@ -29,6 +30,15 @@
     <!--part-one: img + title + button-->
     <div class="part-one">
 
+      <!-- <div class="menu-container center">
+        <button class="menu-button" type="button">ALL CATEGORIES <span>+</span></button>
+        <ul class="menu center">
+          <li><a href="#">All tops</a></li>
+          <li><a href="#">Tees</a></li>
+          <li><a href="#">Sweaters</a></li>
+          <li><a href="#">Pants</a></li>
+        </ul>
+      </div> -->
 
       
     </div>
@@ -87,16 +97,7 @@
     </div>
   </main>
 
-  <footer>
-    <div w3-include-html="footer.html"></div>
-
-    <div class="fixed-bottom">
-      <div>
-        <p>TODAY ONLY! &dollar;12 + &dollar;14 FLEECE JOGGERS</p>
-        <p>TAP FOR MORE WAYS TO SAVE</p>
-      </div>
-    </div>
-  </footer>
+  <div w3-include-html="footer.html"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
@@ -104,5 +105,6 @@
   <script src="./assets/js/common.js"></script>
   <script src="./assets/js/import.js"></script>
   <script src="./assets/js/glider.js"></script>
+  <script src="./assets/js/dropdown.js"></script>
 </body>
 </html>

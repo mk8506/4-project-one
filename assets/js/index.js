@@ -72,7 +72,16 @@ window.addEventListener("load",async  e => {
     }
   })
 
-
+  // document.querySelectorAll(".divBtn")[3].insertAdjacentHTML('beforeend', 
+  //   `<ul class="menu center">
+  //   <li><a href="#">All tops</a></li>
+  //   <li><a href="#">Tees</a></li>
+  //   <li><a href="#">Sweaters</a></li>
+  //   <li><a href="#">Pants</a></li>
+  // </ul>`
+  // );
+  // document.querySelectorAll(".divBtn")[3].setAttribute("class", "menu-container");
+  // document.querySelectorAll("btn1")[2].querySelector("ul").setAttribute("class", "menu");
 
   //part-two
   //이것도 3번 돌아야함 two-a,b,c
@@ -139,7 +148,7 @@ window.addEventListener("load",async  e => {
     const li = document.createElement("li");
     const img = document.createElement("img");
 
-    document.querySelector(".glide-ul2").appendChild(li);
+    document.querySelector(".glide-ul").appendChild(li);
     li.appendChild(img);
 
     li.setAttribute("class", "glide__slide");
