@@ -137,24 +137,25 @@ window.addEventListener("load",async  e => {
     figure.setAttribute("class", "part-two-figure");
     img.setAttribute("src", v.img);
     img.setAttribute("alt", v.alt);
+    span1.setAttribute("class", "span1");
 
     p1.innerHTML = v.title;
     span1.innerHTML = v.price1;
     span2.innerHTML = v.price2;
   })
   
-  //반복되는 코드
-  response.data.footerGlider.forEach((v,i) => {
-    const li = document.createElement("li");
-    const img = document.createElement("img");
+  // //반복되는 코드
+  // response.data.footerGlider.forEach((v,i) => {
+  //   const li = document.createElement("li");
+  //   const img = document.createElement("img");
 
-    document.querySelector(".glide-ul").appendChild(li);
-    li.appendChild(img);
+  //   document.querySelector(".glide-ul2").appendChild(li);
+  //   li.appendChild(img);
 
-    li.setAttribute("class", "glide__slide");
-    img.setAttribute("src", response.data.footerGlider[i].img);
-    img.setAttribute("alt", response.data.footerGlider[i].alt);
-  });
+  //   li.setAttribute("class", "glide__slide");
+  //   img.setAttribute("src", response.data.footerGlider[i].img);
+  //   img.setAttribute("alt", response.data.footerGlider[i].alt);
+  // });
 
   var sliders = document.querySelectorAll('.glide');
 

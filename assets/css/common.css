@@ -168,15 +168,25 @@
   }
 
   form {
-    margin-top: 36px;
-  }
+    margin-top: 20px;
 
-  .glide {
-    width: 100%;
-  }
-  
-  .glide__slide {
+    input {
+      height: 30px;
+      margin-top: 10px;
+    }
 
+    button {
+      background-color: rgb(0, 0, 56);
+      margin-top: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      color: white;
+      font-size: 15px;
+      letter-spacing: 1px;
+      font-weight: bold;
+      box-shadow: none;
+      padding: 10px 20px;
+    }
   }
 }
 

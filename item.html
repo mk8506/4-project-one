@@ -114,7 +114,7 @@
         <h2 class="center">CUSTOMERS ALSO LIKED</h2>
         <ul class="flex">
           <li>
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -124,7 +124,7 @@
             <button><img src="./assets/img/icons/bagplus.png"/></button>
           </li>
           <li>
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -134,7 +134,7 @@
             <button><img src="./assets/img/icons/bagplus.png"/></button>
           </li>
           <li>
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -144,7 +144,7 @@
             <button><img src="./assets/img/icons/bagplus.png"/></button>
           </li>
           <li>
-            <a href="#">
+            <a  class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -154,7 +154,7 @@
             <button><img src="./assets/img/icons/bagplus.png"/></button> 
           </li>
           <li>
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -166,8 +166,8 @@
       </div>
     </div>
 
-
     <div id="swiper-container" class="center">
+      <h2 class="center">CUSTOMERS ALSO PURCHASED</h2>
       <!--https://swiperjs.com/swiper-api-->
       <!-- Slider main container -->
       <div class="swiper">
@@ -176,7 +176,7 @@
           <!-- Slides -->
           <!-- <div class="swiper-slide" style="width: 35px;"></div> -->
           <div class="swiper-slide">
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -185,7 +185,7 @@
             <button><img/></button>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -194,7 +194,7 @@
             <button><img/></button>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -203,7 +203,7 @@
             <button><img/></button>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -212,7 +212,7 @@
             <button><img/></button>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -221,7 +221,7 @@
             <button><img/></button>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a  class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -230,7 +230,7 @@
             <button><img/></button>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -239,7 +239,7 @@
             <button><img/></button>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -248,7 +248,7 @@
             <button><img/></button>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -257,7 +257,7 @@
             <button><img/></button>
           </div>
           <div class="swiper-slide">
-            <a href="#">
+            <a class="dul-a" href="#">
               <figure>
                 <img class="dul-photos" src="" alt="photo"/>
               </figure>
@@ -275,7 +275,7 @@
 
 
 
-    <!--sam-->
+    <!--sam: review-->
     <div class="part-sam boxes">
       <h2 class="center">REVIEWS</h2>
       <div class="flex">
@@ -296,20 +296,20 @@
       <p>1 Customer Review</p>
       <hr/>
 
-      <p>Sort By</p>
       <form class="flex">
-        <select>
-          <option>Highest Rate</option>
-          <option>Most Recent</option>
-          <option>Most Helpful</option>
-          <option>lowest Rate</option>
-          <option>Oldest</option>
-          <option>Images</option>
-        </select>
         <div>
-          <input type="text"/>
-          <button type="submit"><img src="./assets/img/icons/rg.svg" alt="find button"/></button>
+          <p>Sort By</p>
+          <select>
+            <option>Highest Rated</option>
+            <option>Most Recent</option>
+            <option>Most Helpful</option>
+            <option>lowest Rate</option>
+            <option>Oldest</option>
+            <option>Images</option>
+          </select>
         </div>
+        <input type="text" placeholder="Enter Search Terms"/>
+        <button type="submit"><img src="./assets/img/icons/rg.svg" alt="find button"/></button>
       </form>
 
       <!--reviews-->
@@ -333,7 +333,9 @@
 
     </div>
   </main>
-  <div w3-include-html="footer.html"></div>
+  <div class="footer">
+    <div w3-include-html="footer.html"></div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>  
@@ -385,6 +387,7 @@
   <script src="./assets/js/import.js"></script>
   <script src="./assets/js/glider.js"></script>
   <script src="./assets/js/common.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 </html>

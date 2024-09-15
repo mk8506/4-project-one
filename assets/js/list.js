@@ -5,7 +5,7 @@ window.addEventListener("load",async  e => {
 
   let response = null;
   try {
-    response = await axios.get("../assets/js/dataList.json");
+    response = await axios.get("../assets/js/data.json");
     console.log(response.data);
   } catch (error) {
     console.error(error.code +"\n"+ error.message);
@@ -74,6 +74,7 @@ window.addEventListener("load",async  e => {
     figure.appendChild(img);
 
     a.setAttribute("class", "part-two-a");
+    a.setAttribute("href", `item.html?id=${v.id}&page=list`); //
     figure.setAttribute("class", "part-two-figure");
     img.setAttribute("src", v.img);
     img.setAttribute("alt", v.alt);
@@ -82,23 +83,6 @@ window.addEventListener("load",async  e => {
     span1.innerHTML = v.price1;
     span2.innerHTML = v.price2;
   });
-
-  //반복되는 코드
-  let response1 = null;
-  try {
-    response1 = await axios.get("../assets/js/data.json");
-    console.log(response1.data);
-  } catch (error) {
-    console.error(error.code +"\n"+ error.message);
-    let alertThis = error.message;
-    if (error.response !== undefined) {
-      const add = error.response.status +"\n"+ error.response.statusText;
-      console.error(add);
-      alertThis += "\n"+ add;
-    }
-    alert(alertThis);
-    return;
-  }
 
   response1.data.footerGlider.forEach((v,i) => {
     const li = document.createElement("li");

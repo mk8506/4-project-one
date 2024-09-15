@@ -1,10 +1,14 @@
 html {
-  background-color: rgb(255, 237, 234);
+  background-color: rgb(254, 243, 241);
 }
 
 .boxes {
   background-color: white;
   margin-bottom: 10px;
+
+  &:last-child {
+    margin-bottom: none;
+  }
 }
 
 main {
@@ -115,7 +119,6 @@ h2 {
 }
 
 .swiper {
-  height: 300px;
   background-color: white;
 
   .swiper-button-prev {
@@ -133,6 +136,7 @@ h2 {
 /*sam*/
 
 .part-sam {
+  padding: 10px;
 
   div {
     
@@ -157,4 +161,34 @@ h2 {
     width: 50px;
     height: auto;
   }
+
+  form {
+    justify-content: flex-end;
+
+    input {
+      margin-left: 16px;
+      width: 340px;
+      height: 40px;
+      padding: 0;
+      margin-top: 24px;
+    }
+
+    button {
+      height: 40px;
+      margin-top: 24px;
+    }
+
+    select {
+      width: 340px;
+      height: 40px;
+      padding: 0;
+    }
+  }
+}
+
+.footer {
+  background-color: white;
+}
+footer {
+  background-color: white;
 }

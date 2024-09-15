@@ -1,3 +1,10 @@
+main > p {
+  margin: 10px 0;
+  color: rgb(91, 91, 91);
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
 .buttons {
   margin-right: 16px;
   border:none;

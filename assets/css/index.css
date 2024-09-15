@@ -64,7 +64,16 @@ button {
 
 /*part-two*/
 
-.part-two-a {
+.part-two {
+
+  .span1 {
+    text-decoration: line-through;
+    margin-right: 10px;
+  }
+
+  .loop3 {
+    max-width: 80%;
+  }
 }
 
 .part-two-figure {

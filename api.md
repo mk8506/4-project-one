@@ -22,7 +22,6 @@ paths (index.html -> category.html):
       summary: Get the category data by select
       parameters:
         - select: string (optional) -> none: get all category data
-        - Authorization: (no need)
       responses:
         '200':
           description: A single user

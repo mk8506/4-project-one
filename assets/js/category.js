@@ -62,7 +62,7 @@
     p2.appendChild(span2);
 
     a.setAttribute("class", "part-two-a");
-    a.setAttribute("href", `item.html?id=${v.id}/`);
+    a.setAttribute("href", `item.html?id=${v.id}&page=category`);
     figure.setAttribute("class", "part-two-figure");
     img.setAttribute("src", v.img);
     img.setAttribute("alt", v.alt);

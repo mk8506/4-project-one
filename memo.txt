@@ -31,7 +31,6 @@ category
 item == product
 
 -------------------------Api
-
 매서드  url
 GET  .json
 id로 json data 가져오기 -> js로 html 자리에 넣기
@@ -49,3 +48,7 @@ category -> item.html
 ----------to do
 1. slide css
 1. list.html 연결 정리
+
+-----------study
+/ -> ?
+if/else 전에 init 
