@@ -15,12 +15,9 @@
 <body>
   <div w3-include-html="header.html"></div>
   <main>
-
     <!--hana-->
     <div class="boxes">
       <div class="item-container">
-
-        <!--fixed-->
         <div class="fixed-container">
           <div class="fixed">
             <p style="padding: 1.75rem 0px 1.563rem 1.813rem;">Girls / Graphic Tees & T-shirts</p>
@@ -39,42 +36,25 @@
           </div>
         </div>
 
-
         <!--details-->
         <div class="details" style="padding: 64px 24px 0 24px; width: 34%">
           <h1 id="title" style="font-size: 26px;"></h1>
-          <div class="flex">
-            <p><span id="price1"></span><span id="price2"></span></p>
-          </div>
-          <p>Color: rusty torch</p>
-          <p>Product details may vary by color</p>
-          <div class="flex">
-            <img/><img/><img/><img/><img/>
-          </div>
-          <div class="flex">
-            <h5>Regular</h5>
-            <h5>Plus</h5>
-          </div>
+          <div class="flex"><p><span id="price1"></span><span id="price2"></span></p></div>
+          <p>Color: rusty torch</p><p>Product details may vary by color</p>
+          <div class="flex"><img/><img/><img/><img/><img/></div>
+          <div class="flex"><h5>Regular</h5><h5>Plus</h5></div>
           <p>SIZE GUIDE</p>
           <div>Select a size for pickup options</div>
           <select>
-            <option>
-              <p>Free Pickup</p>
-              <p>Order by 2pm to get today</p>
-              <p>Select a size for pickup options</p>
-            </option>
-            <option>
-              <p>Free Fast Shipping</p>
-              <p>FREE for Rewards Members ($50 min) Sign in or Join</p>
-            </option>
+            <option>Free Pickup<br/>Order by 2pm to get today<br/>Select a size for pickup options</option>
+            <option>Free Fast Shipping<br/>FREE for Rewards Members ($50 min) Sign in or Join</option>
           </select>
           <div class="flex" justify-content="1 7">
             <select>
-              (dropdown)
+              <option>option one</option>
+              <option>option two</option>
             </select>
-            <div>
-              <a>ADD TO BAD</a>
-            </div>
+            <div><a class="add-to-bag">ADD TO BAG</a> </div>
           </div>
           <p><img/> and <img/> available for orders above $35</p>
           <div>
@@ -112,170 +92,30 @@
     <div class="dul">
       <div class="boxes">
         <h2 class="center">CUSTOMERS ALSO LIKED</h2>
-        <ul class="flex">
-          <li>
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-              <p>Kids Sale Deal</p>
-            </a>
-            <button><img src="./assets/img/icons/bagplus.png"/></button>
-          </li>
-          <li>
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-              <p>Kids Sale Deal</p>
-            </a>
-            <button><img src="./assets/img/icons/bagplus.png"/></button>
-          </li>
-          <li>
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-              <p>Kids Sale Deal</p>
-            </a>
-            <button><img src="./assets/img/icons/bagplus.png"/></button>
-          </li>
-          <li>
-            <a  class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-              <p>Kids Sale Deal</p>
-            </a>
-            <button><img src="./assets/img/icons/bagplus.png"/></button> 
-          </li>
-          <li>
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-              <p>Kids Sale Deal</p>
-            </a>
-            <button><img src="./assets/img/icons/bagplus.png"/></button></li>
+        <ul class="customers-liked flex">
+          <!--lis-->
         </ul>
       </div>
-    </div>
 
-    <div id="swiper-container" class="center">
+    <div id="swiper-container" class="boxes">
       <h2 class="center">CUSTOMERS ALSO PURCHASED</h2>
-      <!--https://swiperjs.com/swiper-api-->
-      <!-- Slider main container -->
       <div class="swiper">
-        <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <!-- <div class="swiper-slide" style="width: 35px;"></div> -->
-          <div class="swiper-slide">
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-            </a>
-            <button><img/></button>
-          </div>
-          <div class="swiper-slide">
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-            </a>
-            <button><img/></button>
-          </div>
-          <div class="swiper-slide">
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-            </a>
-            <button><img/></button>
-          </div>
-          <div class="swiper-slide">
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-            </a>
-            <button><img/></button>
-          </div>
-          <div class="swiper-slide">
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-            </a>
-            <button><img/></button>
-          </div>
-          <div class="swiper-slide">
-            <a  class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-            </a>
-            <button><img/></button>
-          </div>
-          <div class="swiper-slide">
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-            </a>
-            <button><img/></button>
-          </div>
-          <div class="swiper-slide">
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-            </a>
-            <button><img/></button>
-          </div>
-          <div class="swiper-slide">
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-            </a>
-            <button><img/></button>
-          </div>
-          <div class="swiper-slide">
-            <a class="dul-a" href="#">
-              <figure>
-                <img class="dul-photos" src="" alt="photo"/>
-              </figure>
-              <p class="dul-title"></p>
-            </a>
-            <button><img/></button>
-          </div>
         </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-      <!-- <img class="swiper-button-prev" src="./assets/img/icons/arrow1.svg" alt="arrow-left"></img> -->
-      <!-- <img class="swiper-button-next" src="./assets/img/icons/arrow1.svg" alt="arrow-right" style="transform: scaleX(-1);"></img> -->
     </div>
-
-
+  </div>
 
     <!--sam: review-->
+    <div class="part-sam boxes">
+      <h2 class="center">CUSTOMERS PHOTOS</h2>
+      <div class="customer-photos flex">
+        <img style="width: 150px; height: 150px;" src="./assets/img/itemPage/customer photo.webp" alt="review photos"/>
+      </div>
+    </div>
     <div class="part-sam boxes">
       <h2 class="center">REVIEWS</h2>
       <div class="flex">
@@ -293,9 +133,8 @@
       <figure>
         <img src="./assets/img/itemPage/review-graph.png" alt="review-graph"/>
       </figure>
-      <p>1 Customer Review</p>
+      <p id="review-cnt"></p>
       <hr/>
-
       <form class="flex">
         <div>
           <p>Sort By</p>
@@ -311,26 +150,12 @@
         <input type="text" placeholder="Enter Search Terms"/>
         <button type="submit"><img src="./assets/img/icons/rg.svg" alt="find button"/></button>
       </form>
-
       <!--reviews-->
-      <img/>
-      <h1>Love the color</h1>
-      <p><span>anonymous,</span> <span>7 days ago</span></p>
-      <p>Comments about Softest Short-Sleeve Heart-Pocket T-Shirt for Girls</p>
-      <p>Cure shirt but thin fabric</p>
-      <p>Was this review helpful to you? <i></i> <i></i></p>
-      <p>Flag this review</p>
-      <p><i></i>Verified Buyer <i></i>Sweepstakes Entry</p>
-      <hr/>
-
+      <div id="reviews">
+        <!--js-->
+      </div>
       <p>Displaying Review 1-1</p>
       <p>Related Categories</p>
-    </div>
-    <div>
-
-    </div>
-    <div>
-
     </div>
   </main>
   <div class="footer">
@@ -341,47 +166,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>  
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module">
-    const swiper = new Swiper(
-      '.swiper', {
-        // Default parameters
-        slidesPerView: 5,
-        spaceBetween: 0,
-        // Responsive breakpoints
-        // breakpoints: {
-        //   // when window width is >= 320px
-        //   320: {
-        //     slidesPerView: 5,
-        //     spaceBetween: 20
-        //   }
-        // },
-        // breakpointsBase: 'window',
-        // centeredSlidesBounds: 'true',
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
 
-        // Optional parameters
-        direction: 'horizontal',
-        loop: false,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        // Navigation arrows
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
-      }
-    );
   </script>
   <script src="./assets/js/item.js"></script>
   <script src="./assets/js/import.js"></script>

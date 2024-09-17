@@ -5,22 +5,10 @@
       return Object.fromEntries(query);
     }
   }
-  
   const utilHelper = new util();
-  
   const params = utilHelper.getQuery();
-
   console.log(params);
 
-  // if (!params.select) {
-  //   alert("no select para");
-  //   history.back();
-  //   return;
-  // }
-
-  console.log("get data");
-  console.log(params.select)
-;
   let response = null;
   const url = "http://localhost:3001/partCat";
   try {

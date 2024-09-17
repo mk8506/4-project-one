@@ -26,7 +26,7 @@ THE PROBLEM:
 div > div (items가 연결되어 있어서 active만 좌우 크기를 줄일 수 없음) > items
 
 index == gap
-list == division
+list == division    https://oldnavy.gap.com/browse/division.do?cid=5910&mlink=5151,topNav,visnav&nav=meganav%3ABoys%3A%3A
 category
 item == product
 
@@ -48,6 +48,8 @@ category -> item.html
 ----------to do
 1. slide css
 1. list.html 연결 정리
+1. why list.partFirst -girls backgroundImage doesn't load
+1. list.html button all for ${params.page} 로 바꿔야하는데
 
 -----------study
 / -> ?

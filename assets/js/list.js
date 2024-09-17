@@ -18,20 +18,40 @@ window.addEventListener("load",async  e => {
     alert(alertThis);
     return;
   }
+  
+  class util {
+    getQuery() {
+      const query = new URLSearchParams(location.search);
+      return Object.fromEntries(query);
+    }
+  }
 
-  response.data.partFirst.forEach((v,i) => {
-    document.querySelectorAll(".main-photo")[i].style.backgroundImage = `url(${v.img})`;
-  });
+  const utilHelper = new util();
+  const params = utilHelper.getQuery();
+  document.querySelector(".part-first").querySelector("h1").innerHTML = `Shop for ${params.select}`;
+   
+  if (params.select === "boys") {
+    response.data.partFirst.forEach((v,i) => {
+      document.querySelectorAll(".main-photo")[i].style.backgroundImage = `url(${v.imgBoys})`;
+    });
+  } else if (params.select === "girls") {
+    console.log("else if");
+    response.data.partFirst.forEach((v,i) => {
+      console.log("in the loop");
+      document.querySelectorAll(".main-photo")[i].style.backgroundImage = `url(${v.imgGirls})`;
+    });
+  } else if (params.select || params.select === undefined) {
+    console.log("select undefined or null");
+    window.location = "./404.html";
+  }
 
   response.data.partSecond.forEach((v,i) => {
-    console.log(v.img);
     document.querySelectorAll(".second-photos")[i].setAttribute("src", v.img);
     document.querySelectorAll(".second-title")[i].innerHTML = v.title;
   });
 
   //~ul
   for (let i = 0; i < 2; i++) {
-    console.log(`Creating div for item ${i}`);
     const div = document.createElement("div");
     const ul = document.createElement("ul");
     document.querySelector(".glide__slides").appendChild(div);
@@ -45,7 +65,6 @@ window.addEventListener("load",async  e => {
     for (let i = 0; i < 5; i++) {
       const li = document.createElement("li");
       document.querySelectorAll(".glide-ul")[j].appendChild(li);
-      console.log(`append li to ul ${j}`);
       li.setAttribute("class", "bunchOfLis");
     }
   }
@@ -62,7 +81,6 @@ window.addEventListener("load",async  e => {
     const span2 = document.createElement("span");
 
     document.querySelectorAll(".bunchOfLis")[i].appendChild(a);
-    console.log(`append a to li ${i}`);
     a.appendChild(figure);
     a.appendChild(p1);
     a.appendChild(p2);
@@ -76,6 +94,8 @@ window.addEventListener("load",async  e => {
     a.setAttribute("class", "part-two-a");
     a.setAttribute("href", `item.html?id=${v.id}&page=list`); //
     figure.setAttribute("class", "part-two-figure");
+
+    /**/
     img.setAttribute("src", v.img);
     img.setAttribute("alt", v.alt);
 
@@ -83,20 +103,6 @@ window.addEventListener("load",async  e => {
     span1.innerHTML = v.price1;
     span2.innerHTML = v.price2;
   });
-
-  response1.data.footerGlider.forEach((v,i) => {
-    const li = document.createElement("li");
-    const img = document.createElement("img");
-
-    document.querySelector(".glide-ul2").appendChild(li);
-    li.appendChild(img);
-
-    li.setAttribute("class", "glide__slide");
-    img.setAttribute("src", response1.data.footerGlider[i].img);
-    img.setAttribute("alt", response1.data.footerGlider[i].alt);
-  });
-
-
 
   var sliders = document.querySelectorAll('.glide');
 
@@ -107,5 +113,4 @@ window.addEventListener("load",async  e => {
     
     glide.mount();
   }
-
 });

@@ -44,17 +44,6 @@ window.addEventListener("load",async  e => {
     h1.setAttribute("class", "part-one-h1");
     divBtn.setAttribute("class", "divBtn");
 
-    // //btn ul
-    // divBtn.setAttribute("class", "menu-container");
-    // const btnUl = document.createElement("ul");
-    // div.Btn.appendChild("btnUl");
-    // btnUl.setAttribute("class", "menu");
-    // for (let i = 0; i < 4; i++) {
-    //   const btnLi = document.createElement("li");
-    //   btnUl.appendChild("btnLi");
-    //   btnLi.innerHTML = "Girls";
-    // }
-    
     h1.innerHTML = response.data.partOne[i].title;
     btn1.innerHTML = response.data.partOne[i].button1;
     
@@ -72,24 +61,10 @@ window.addEventListener("load",async  e => {
     }
   })
 
-  // document.querySelectorAll(".divBtn")[3].insertAdjacentHTML('beforeend', 
-  //   `<ul class="menu center">
-  //   <li><a href="#">All tops</a></li>
-  //   <li><a href="#">Tees</a></li>
-  //   <li><a href="#">Sweaters</a></li>
-  //   <li><a href="#">Pants</a></li>
-  // </ul>`
-  // );
-  // document.querySelectorAll(".divBtn")[3].setAttribute("class", "menu-container");
-  // document.querySelectorAll("btn1")[2].querySelector("ul").setAttribute("class", "menu");
-
   //part-two
-  //이것도 3번 돌아야함 two-a,b,c
   //div to ul
   for (let j = 0; j < 3; j++) {
     console.log(`Appending to .loop index ${j}`);
-    //div.slide > ul
-    //Math.floor(response.data.partTwo.length/5)
     for (let i = 0; i < 2; i++) {
       console.log(`Creating div for item ${i}`);
       const div = document.createElement("div");
@@ -101,6 +76,7 @@ window.addEventListener("load",async  e => {
     }
   }
 
+  //li
   for (let j = 0; j < 6; j++) {
     for (let i = 0; i < ((j<4)?5:4); i++) {
       const li = document.createElement("li");
@@ -110,10 +86,8 @@ window.addEventListener("load",async  e => {
     }
   }
 
+  //div > ul > li > a > figure, p1, p2
   response.data.partTwo.forEach((v,i) => {
-    //div > ul > li > a > figure, p1, p2
-    //if (li 1~5) {div > ul > li 5개}
-    //p2 > span1, span2
     const a = document.createElement("a");
     const figure = document.createElement("figure");
     const p1 = document.createElement("p");
@@ -143,19 +117,6 @@ window.addEventListener("load",async  e => {
     span1.innerHTML = v.price1;
     span2.innerHTML = v.price2;
   })
-  
-  // //반복되는 코드
-  // response.data.footerGlider.forEach((v,i) => {
-  //   const li = document.createElement("li");
-  //   const img = document.createElement("img");
-
-  //   document.querySelector(".glide-ul2").appendChild(li);
-  //   li.appendChild(img);
-
-  //   li.setAttribute("class", "glide__slide");
-  //   img.setAttribute("src", response.data.footerGlider[i].img);
-  //   img.setAttribute("alt", response.data.footerGlider[i].alt);
-  // });
 
   var sliders = document.querySelectorAll('.glide');
 
@@ -166,7 +127,5 @@ window.addEventListener("load",async  e => {
     
     glide.mount();
   }
-
-  //most likely due to how and when the library attaches its event listeners.
 });
 

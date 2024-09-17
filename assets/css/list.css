@@ -7,9 +7,11 @@
 /*part first*/
 
 .part-first {
-
-  .main-photo-container {
+  h1 {
+    font-size: 26px; 
+    padding: 20px 0;
   }
+
   .main-photo {
     margin: 8px 4px;
     background-repeat: no-repeat;

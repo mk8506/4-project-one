@@ -8,11 +8,9 @@ document.addEventListener('scroll', function(){
   const scrollup = document.querySelector("#scrollup");
   if(scrollTop > lastScroll) {
     //down
-    console.log("scroll down");
     scrollup.classList.remove("scrollup");
   } else {
     //up
-    console.log("scroll up");
     scrollup.classList.add("scrollup");
   }
   lastScroll = scrollTop;
