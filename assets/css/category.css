@@ -17,15 +17,19 @@ main > p {
 
 #items {
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: left;
 
   a {
     text-decoration: none;
   }
 
   li {
-    width: 24%;
-    padding: 10px 0 10px 0;
+    width: 25%;
+
+    a {
+      display: block;
+      margin: 8px 7px;
+    }
 
     figure {
 

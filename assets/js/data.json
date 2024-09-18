@@ -1,5 +1,5 @@
 {
-  "partOne": [
+  "index": [
     {
       "id": 101,
       "img": "./assets/img/part-one 101 img one.png",
@@ -32,230 +32,66 @@
       "button3": "SHOP BABY +"
     }
   ],
-  "partTwo": [
+  "listMain": [
     {
       "id": 101,
-      "img": "./assets/img/partTwoImgs/1.jpg",
-      "alt": "part-two img 1",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
+      "imgBoys": "./assets/img/boys/NewArrival.png",
+      "imgGirls": "./assets/img/girls/Buttoned Open Front Cardigan for Girls.webp"
     },
     {
       "id": 102,
-      "img": "./assets/img/partTwoImgs/2.jpg",
-      "alt": "part-two img 2",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
+      "imgBoys": "./assets/img/boys/sale.png",
+      "imgGirls": "./assets/img/girls/Printed Short-Sleeve Ribbed Dress for Girls.avif"
+    }
+  ],
+  "listSub": [
+    {
+      "id": 101,
+      "img": "./assets/img/boys/partSecond/one.png",
+      "img1": "./assets/img/girls/one.avif",
+      "title": "GRAPHIC TEES & T-SHIRTS"
+    },
+    {
+      "id": 102,
+      "img": "./assets/img/boys/partSecond/two.png",
+      "img1": "./assets/img/girls/two.avif",
+      "title": "SHORTS"
     },
     {
       "id": 103,
-      "img": "./assets/img/partTwoImgs/3.jpg",
-      "alt": "part-two img 3",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
+      "img": "./assets/img/boys/partSecond/three.png",
+      "img1": "./assets/img/girls/three.avif",
+      "title": "ACTIVEWEAR"
     },
     {
       "id": 104,
-      "img": "./assets/img/partTwoImgs/4.jpg",
-      "alt": "part-two img 4",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 105,
-      "img": "./assets/img/partTwoImgs/5.jpg",
-      "alt": "part-two img 5",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 106,
-      "img": "./assets/img/partTwoImgs/6.jpg",
-      "alt": "part-two img 6",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 107,
-      "img": "./assets/img/partTwoImgs/7.jpg",
-      "alt": "part-two img 7",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 108,
-      "img": "./assets/img/partTwoImgs/8.jpg",
-      "alt": "part-two img 8",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 109,
-      "img": "./assets/img/partTwoImgs/9.jpg",
-      "alt": "part-two img 9",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 110,
-      "img": "./assets/img/partTwoImgs/10.jpg",
-      "alt": "part-two img 10",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
+      "img": "./assets/img/boys/partSecond/four.png",
+      "img1": "./assets/img/girls/four.avif",
+      "title": "SWEATSHIRTS & SWEATPANTS"
     },
     {
       "id": 201,
-      "img": "./assets/img/partTwoImgs/11.jpg",
-      "alt": "part-two img 11",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
+      "img": "./assets/img/boys/partSecond/five.png",
+      "img1": "./assets/img/girls/five.avif",
+      "title": "SWIM"
     },
     {
       "id": 202,
-      "img": "./assets/img/partTwoImgs/12.jpg",
-      "alt": "part-two img 12",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
+      "img": "./assets/img/boys/partSecond/six.png",
+      "img1": "./assets/img/girls/six.avif",
+      "title": "POLOS"
     },
     {
       "id": 203,
-      "img": "./assets/img/partTwoImgs/13.jpg",
-      "alt": "part-two img 13",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
+      "img": "./assets/img/boys/partSecond/seven.png",
+      "img1": "./assets/img/girls/seven.avif",
+      "title": "PANTS"
     },
     {
       "id": 204,
-      "img": "./assets/img/partTwoImgs/14.jpg",
-      "alt": "part-two img 14",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 205,
-      "img": "./assets/img/partTwoImgs/15.jpg",
-      "alt": "part-two img 15",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 206,
-      "img": "./assets/img/partTwoImgs/16.jpg",
-      "alt": "part-two img 16",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 207,
-      "img": "./assets/img/partTwoImgs/17.jpg",
-      "alt": "part-two img 17",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 208,
-      "img": "./assets/img/partTwoImgs/18.jpg",
-      "alt": "part-two img 18",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 209,
-      "img": "./assets/img/partTwoImgs/19.jpg",
-      "alt": "part-two img 19",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 210,
-      "img": "./assets/img/partTwoImgs/20.jpg",
-      "alt": "part-two img 20",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 301,
-      "img": "./assets/img/partTwoImgs/21.jpg",
-      "alt": "part-two img 21",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 302,
-      "img": "./assets/img/partTwoImgs/22.jpg",
-      "alt": "part-two img 22",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 303,
-      "img": "./assets/img/partTwoImgs/23.jpg",
-      "alt": "part-two img 23",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 304,
-      "img": "./assets/img/partTwoImgs/24.jpg",
-      "alt": "part-two img 24",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 305,
-      "img": "./assets/img/partTwoImgs/25.jpg",
-      "alt": "part-two img 25",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 306,
-      "img": "./assets/img/partTwoImgs/26.jpg",
-      "alt": "part-two img 26",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 307,
-      "img": "./assets/img/partTwoImgs/27.jpg",
-      "alt": "part-two img 27",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 308,
-      "img": "./assets/img/partTwoImgs/28.jpg",
-      "alt": "part-two img 28",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
+      "img": "./assets/img/boys/partSecond/eight.png",
+      "img1": "./assets/img/girls/eight.avif",
+      "title": "JEANS"
     }
   ],
   "footerGlider": [
@@ -275,356 +111,463 @@
       "alt": "find a store"
     }
   ],
-  "partFirst": [
+  "Goods": [
     {
-      "id": 101,
-      "imgBoys": "./assets/img/boys/NewArrival.png",
-      "imgGirls": "./assets/img/girls/Buttoned Open Front Cardigan for Girls.webp"
+      "id": 1,
+      "Women": [
+        {
+          "id": 101,
+          "img": "./assets/img/partTwoImgs/1.jpg",
+          "alt": "part-two img 1",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 102,
+          "img": "./assets/img/partTwoImgs/2.jpg",
+          "alt": "part-two img 2",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 103,
+          "img": "./assets/img/partTwoImgs/3.jpg",
+          "alt": "part-two img 3",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 104,
+          "img": "./assets/img/partTwoImgs/4.jpg",
+          "alt": "part-two img 4",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 105,
+          "img": "./assets/img/partTwoImgs/5.jpg",
+          "alt": "part-two img 5",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 106,
+          "img": "./assets/img/partTwoImgs/6.jpg",
+          "alt": "part-two img 6",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 107,
+          "img": "./assets/img/partTwoImgs/7.jpg",
+          "alt": "part-two img 7",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 108,
+          "img": "./assets/img/partTwoImgs/8.jpg",
+          "alt": "part-two img 8",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 109,
+          "img": "./assets/img/partTwoImgs/9.jpg",
+          "alt": "part-two img 9",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 110,
+          "img": "./assets/img/partTwoImgs/10.jpg",
+          "alt": "part-two img 10",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 201,
+          "img": "./assets/img/partTwoImgs/11.jpg",
+          "alt": "part-two img 11",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 202,
+          "img": "./assets/img/partTwoImgs/12.jpg",
+          "alt": "part-two img 12",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 203,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/13.jpg",
+          "alt": "part-two img 13",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 204,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/14.jpg",
+          "alt": "part-two img 14",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 205,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/15.jpg",
+          "alt": "part-two img 15",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 206,
+          "img": "./assets/img/partTwoImgs/16.jpg",
+          "alt": "part-two img 16",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 207,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/17.jpg",
+          "alt": "part-two img 17",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 208,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/18.jpg",
+          "alt": "part-two img 18",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 209,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/19.jpg",
+          "alt": "part-two img 19",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 210,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/20.jpg",
+          "alt": "part-two img 20",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 301,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/21.jpg",
+          "alt": "part-two img 21",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 302,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/22.jpg",
+          "alt": "part-two img 22",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 303,
+          "img": "./assets/img/partTwoImgs/23.jpg",
+          "alt": "part-two img 23",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 304,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/24.jpg",
+          "alt": "part-two img 24",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 305,
+          "img": "./assets/img/partTwoImgs/25.jpg",
+          "alt": "part-two img 25",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 306,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/26.jpg",
+          "alt": "part-two img 26",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 307,
+          "img": "./assets/img/partTwoImgs/27.jpg",
+          "alt": "part-two img 27",
+          "title": "High-Waisted PowerSoft Joggers",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 308,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/partTwoImgs/28.jpg",
+          "alt": "part-two img 28",
+          "title": "High-Waisted PowerSoft 7/8 Leggings",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        }
+      ]
     },
     {
-      "id": 102,
-      "imgBoys": "./assets/img/boys/sale.png",
-      "imgGirls": "./assets/img/girls/Printed Short-Sleeve Ribbed Dress for Girls.avif"
-    }
-  ],
-  "partSecond": [
-    {
-      "id": 101,
-      "img": "./assets/img/boys/partSecond/one.png",
-      "title": "GRAPHIC TEES & T-SHIRTS"
+      "id": 2,
+      "Boys": [
+        {
+          "id": 101,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/partThird/one.jpg",
+          "title": "Jacket",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 102,
+          "img": "./assets/img/boys/partThird/two.jpg",
+          "title": "Jacket",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 103,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/partThird/three.jpg",
+          "title": "Jacket",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 104,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/partThird/four.jpg",
+          "title": "Jacket",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 105,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/partThird/five.jpg",
+          "title": "Jacket",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 106,
+          "img": "./assets/img/boys/partThird/six.jpg",
+          "title": "Jacket",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 107,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/partThird/seven.jpg",
+          "title": "Jacket",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 108,
+          "img": "./assets/img/boys/partThird/eight.jpg",
+          "title": "Jacket",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 109,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/partThird/nine.jpg",
+          "title": "Jacket",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 110,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/partThird/ten.jpg",
+          "title": "Jacket",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 201,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/boys/Baggy Jogger Sweatpants for Boys.jpeg",
+          "alt": "part-two img 1",
+          "title": "Baggy Jogger Sweatpants for Boys",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 202,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/boys/CloudMotion Long-Sleeve Graphic T-Shirt for Boys.jpeg",
+          "alt": "part-two img 2",
+          "title": "CloudMotion Long-Sleeve Graphic T-Shirt for Boys",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 203,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/boys/Printed Softest Long-Sleeve T-Shirt for Boys.jpg",
+          "alt": "part-two img 3",
+          "title": "Printed Softest Long-Sleeve T-Shirt for Boys",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 204,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/boys/Short-Sleeve Plain T-Shirt for Boys.jpg",
+          "alt": "part-two img 4",
+          "title": "Short-Sleeve Plain T-Shirt for Boys",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 205,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/boys/boys/Go-Dry Cool Mesh Jogger Pants for Boys.jpg",
+          "alt": "part-two img 5",
+          "title": "Go-Dry Cool Mesh Jogger Pants for Boys",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        }
+      ]
     },
     {
-      "id": 102,
-      "img": "./assets/img/boys/partSecond/two.png",
-      "title": "SHORTS"
-    },
-    {
-      "id": 103,
-      "img": "./assets/img/boys/partSecond/three.png",
-      "title": "ACTIVEWEAR"
-    },
-    {
-      "id": 104,
-      "img": "./assets/img/boys/partSecond/four.png",
-      "title": "SWEATSHIRTS & SWEATPANTS"
-    },
-    {
-      "id": 201,
-      "img": "./assets/img/boys/partSecond/five.png",
-      "title": "SWIM"
-    },
-    {
-      "id": 202,
-      "img": "./assets/img/boys/partSecond/six.png",
-      "title": "POLOS"
-    },
-    {
-      "id": 203,
-      "img": "./assets/img/boys/partSecond/seven.png",
-      "title": "PANTS"
-    },
-    {
-      "id": 204,
-      "img": "./assets/img/boys/partSecond/eight.png",
-      "title": "JEANS"
-    }
-  ],
-  "partThird": [
-    {
-      "id": 101,
-      "img": "./assets/img/boys/partThird/one.jpg",
-      "title": "Jacket",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 102,
-      "img": "./assets/img/boys/partThird/two.jpg",
-      "title": "Jacket",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 103,
-      "img": "./assets/img/boys/partThird/three.jpg",
-      "title": "Jacket",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 104,
-      "img": "./assets/img/boys/partThird/four.jpg",
-      "title": "Jacket",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 105,
-      "img": "./assets/img/boys/partThird/five.jpg",
-      "title": "Jacket",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 106,
-      "img": "./assets/img/boys/partThird/six.jpg",
-      "title": "Jacket",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 107,
-      "img": "./assets/img/boys/partThird/seven.jpg",
-      "title": "Jacket",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 108,
-      "img": "./assets/img/boys/partThird/eight.jpg",
-      "title": "Jacket",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 109,
-      "img": "./assets/img/boys/partThird/nine.jpg",
-      "title": "Jacket",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 110,
-      "img": "./assets/img/boys/partThird/ten.jpg",
-      "title": "Jacket",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    }
-  ],
-  "partDul": [
-    {
-      "id": 101,
-      "img": "./assets/img/boys/partSecond/one.png",
-      "title": "Printed Softest Short-Sleeve T-Shirt for Girls<br/> $9.99 $5.99<br/>40% Off",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 102,
-      "img": "./assets/img/boys/partSecond/two.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 103,
-      "img": "./assets/img/boys/partSecond/three.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 104,
-      "img": "./assets/img/boys/partSecond/four.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 105,
-      "img": "./assets/img/boys/partSecond/five.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 106,
-      "img": "./assets/img/boys/partSecond/six.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 107,
-      "img": "./assets/img/boys/partSecond/seven.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 108,
-      "img": "./assets/img/boys/partSecond/eight.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 109,
-      "img": "./assets/img/boys/partSecond/nine.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 110,
-      "img": "./assets/img/boys/partSecond/ten.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 111,
-      "img": "./assets/img/boys/partSecond/six.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 112,
-      "img": "./assets/img/boys/partSecond/seven.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 113,
-      "img": "./assets/img/boys/partSecond/eight.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 114,
-      "img": "./assets/img/boys/partSecond/nine.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    },
-    {
-      "id": 115,
-      "img": "./assets/img/boys/partSecond/ten.png",
-      "title": "Printed Softest Short-Sleeve T-Shir for Girls<br/> $9.99 $5.99<br/>40% Off"
-    }
-  ],
-  "partCat": [
-    {
-      "id": 101,
-      "select": "boys",
-      "img": "./assets/img/boys/boys/Baggy Jogger Sweatpants for Boys.jpeg",
-      "alt": "part-two img 1",
-      "title": "Baggy Jogger Sweatpants for Boys",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 102,
-      "select": "boys",
-      "img": "./assets/img/boys/boys/CloudMotion Long-Sleeve Graphic T-Shirt for Boys.jpeg",
-      "alt": "part-two img 2",
-      "title": "CloudMotion Long-Sleeve Graphic T-Shirt for Boys",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 103,
-      "select": "boys",
-      "img": "./assets/img/boys/boys/Printed Softest Long-Sleeve T-Shirt for Boys.jpg",
-      "alt": "part-two img 3",
-      "title": "Printed Softest Long-Sleeve T-Shirt for Boys",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 104,
-      "select": "boys",
-      "img": "./assets/img/boys/boys/Short-Sleeve Plain T-Shirt for Boys.jpg",
-      "alt": "part-two img 4",
-      "title": "Short-Sleeve Plain T-Shirt for Boys",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 105,
-      "select": "boys",
-      "img": "./assets/img/boys/boys/Go-Dry Cool Mesh Jogger Pants for Boys.jpg",
-      "alt": "part-two img 5",
-      "title": "Go-Dry Cool Mesh Jogger Pants for Boys",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 201,
-      "select": "girls",
-      "img": "./assets/img/girls/Dynamic Fleece Sleeveless Mock-Neck Top for Girls.webp",
-      "alt": "part-two img 11",
-      "title": "Dynamic Fleece Sleeveless Mock-Neck Top for Girls",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 202,
-      "select": "girls",
-      "img": "./assets/img/girls/Loose High-Waisted Carpenter Pants for Girls.webp",
-      "alt": "part-two img 12",
-      "title": "Loose High-Waisted Carpenter Pants for Girls",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 203,
-      "select": "girls",
-      "img": "./assets/img/girls/Buttoned Open Front Cardigan for Girls.webp",
-      "alt": "part-two img 13",
-      "title": "Buttoned Open Front Cardigan for Girls",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 204,
-      "select": "girls",
-      "img": "./assets/img/girls/Printed Short-Sleeve Ribbed Dress for Girls.avif",
-      "alt": "part-two img 14",
-      "title": "Printed Short-Sleeve Ribbed Dress for Girls",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 301,
-      "img": "./assets/img/partTwoImgs/21.jpg",
-      "alt": "part-two img 21",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 302,
-      "img": "./assets/img/partTwoImgs/22.jpg",
-      "alt": "part-two img 22",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 303,
-      "img": "./assets/img/partTwoImgs/23.jpg",
-      "alt": "part-two img 23",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 304,
-      "img": "./assets/img/partTwoImgs/24.jpg",
-      "alt": "part-two img 24",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 305,
-      "img": "./assets/img/partTwoImgs/25.jpg",
-      "alt": "part-two img 25",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 306,
-      "img": "./assets/img/partTwoImgs/26.jpg",
-      "alt": "part-two img 26",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 307,
-      "img": "./assets/img/partTwoImgs/27.jpg",
-      "alt": "part-two img 27",
-      "title": "High-Waisted PowerSoft Joggers",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
-    },
-    {
-      "id": 308,
-      "img": "./assets/img/partTwoImgs/28.jpg",
-      "alt": "part-two img 28",
-      "title": "High-Waisted PowerSoft 7/8 Leggings",
-      "price1": "&dollar;39.99",
-      "price2": "&dollar;23.99"
+      "id": 3,
+      "Girls": [
+        {
+          "id": 101,
+          "img": "./assets/img/girls/Dynamic Fleece Sleeveless Mock-Neck Top for Girls.webp",
+          "alt": "part-two img 11",
+          "title": "Dynamic Fleece Sleeveless Mock-Neck Top for Girls",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 102,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/girls/Loose High-Waisted Carpenter Pants for Girls.webp",
+          "alt": "part-two img 12",
+          "title": "Loose High-Waisted Carpenter Pants for Girls",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 103,
+          "img": "./assets/img/girls/Buttoned Open Front Cardigan for Girls.webp",
+          "alt": "part-two img 13",
+          "title": "Buttoned Open Front Cardigan for Girls",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 104,
+          "img": "./assets/img/girls/Printed Short-Sleeve Ribbed Dress for Girls.avif",
+          "alt": "part-two img 14",
+          "title": "Printed Short-Sleeve Ribbed Dress for Girls",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 105,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/girls/listone.webp",
+          "alt": "part-two img 14",
+          "title": "Printed Short-Sleeve Ribbed Dress for Girls",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 106,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/girls/listtwo.avif",
+          "alt": "part-two img 14",
+          "title": "Printed Short-Sleeve Ribbed Dress for Girls",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 107,
+          "img": "./assets/img/girls/listthree.avif",
+          "alt": "part-two img 14",
+          "title": "Printed Short-Sleeve Ribbed Dress for Girls",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 108,
+          "category": "customized & new arrivals",
+          "img": "./assets/img/girls/listfour.avif",
+          "alt": "part-two img 14",
+          "title": "Printed Short-Sleeve Ribbed Dress for Girls",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 109,
+          "img": "./assets/img/boys/partSecond/three.png",
+          "alt": "part-two img 14",
+          "title": "Printed Short-Sleeve Ribbed Dress for Girls",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        },
+        {
+          "id": 110,
+          "img": "./assets/img/girls/one.avif",
+          "alt": "part-two img 14",
+          "title": "Printed Short-Sleeve Ribbed Dress for Girls",
+          "price1": "&dollar;39.99",
+          "price2": "&dollar;23.99"
+        }
+      ]
     }
   ],
   "review": [

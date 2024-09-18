@@ -81,8 +81,13 @@ h2 {
 
 .dul {
   li {
-    padding: 0 7px;
-    
+    width: 20%;
+
+    a {
+      display: block;
+      margin: 8px;
+    }
+
     p:last-child {
       font-weight: bold;
     }
@@ -107,8 +112,8 @@ h2 {
 
     button {
       position: absolute;
-      top: 330px;
-      left: 200px;
+      top: 310px;
+      left: 210px;
       z-index: 1.5;
       border: none;
       box-shadow: none;
@@ -123,11 +128,23 @@ h2 {
   }
 }
 
-
 #swiper-container {
   padding: 0 40px 20px 40px;
   position: relative;
   background-color: white;
+
+  .swiper-slide {
+    width: 20%;
+
+    .dul-photos {
+      aspect-ratio:226/302;
+    }
+
+    .button1 {
+      top: 290px;
+      left: 190px;
+    }
+  }
 }
 
 .swiper {

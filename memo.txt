@@ -54,3 +54,8 @@ category -> item.html
 -----------study
 / -> ?
 if/else 전에 init 
+
+----------------memo
+params.id is String
+axios.get request doesn't support deep filtering of nested objects. Should do mannually
+dynamic approach -> use []

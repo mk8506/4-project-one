@@ -1,8 +1,36 @@
 window.addEventListener("load", async e => {
-
+  class util {
+    getQuery() {
+      const query = new URLSearchParams(location.search);
+      return Object.fromEntries(query);
+    }
+  }
+  const utilHelper = new util();
+  const params = utilHelper.getQuery();
+  if (!params.select) {
+    params.select = "All";
+  }
+  if (!params.id) {
+    window.back();
+  }
+  let id1;
+  switch (params.select) {
+    case "Women":
+      id1 = 1;
+      break;
+    case "Boys":
+      id1 = 2;
+      break;
+    case "Girls":
+      id1 = 3;
+      break;
+    default:
+      console.log("default");
+      window.location = "./404.html";
+  }
   let response = null;
   try {
-    response = await axios.get("http://localhost:3001/partDul");
+    response = await axios.get(`http://localhost:3001/Goods/${id1}/`);
     console.log(response.data);
   } catch (error) {
     console.error(error.code +"\n"+ error.message);
@@ -15,6 +43,16 @@ window.addEventListener("load", async e => {
     alert(alertThis);
     return;
   }
+
+  //hana
+  const dataFind = response.data[params.select].find(item => item.id == params.id);
+  document.querySelectorAll(".main-img").forEach((v,i) => {
+    v.setAttribute("src", dataFind.img);
+  });
+
+  document.querySelector("#title").innerHTML = dataFind.title;
+  document.querySelector("#price1").innerHTML = dataFind.price1;
+  document.querySelector("#price2").innerHTML = " " + dataFind.price2;
 
   //dul
   for (let i = 0; i < 5; i++) {
@@ -41,68 +79,17 @@ window.addEventListener("load", async e => {
                 </figure>
                 <p class="dul-title"></p>
               </a>
-              <button><img class="dul-button"/></button>
+              <button class="button1"><img class="dul-button"/></button>
             </div>`
     );
   }
 
-  response.data.forEach((v,i) => {
+  response.data[params.select].forEach((v,i) => {
     document.querySelectorAll(".dul-photos")[i].setAttribute("src", v.img);
     document.querySelectorAll(".dul-title")[i].innerHTML = v.title;
-    document.querySelectorAll(".dul-a")[i].setAttribute("href", `item.html?id=${v.id}&page=item`);
+    document.querySelectorAll(".dul-a")[i].setAttribute("href", `item.html?id=${v.id}`);
     document.querySelectorAll(".dul-button")[i].setAttribute("src", "./assets/img/icons/bagplus.png");
   });
-});
-
-window.addEventListener("load", async e => {
-  //hana
-  class util {
-    getQuery() {
-      const query = new URLSearchParams(location.search);
-      return Object.fromEntries(query);
-    }
-  }
-  const utilHelper = new util();
-  const params = utilHelper.getQuery();
-  console.log("params: " +params);
-  if (!params.id || !params.page) {
-    window.location = "./404.html";
-    return;
-  }
-  let url;  // Declare the variable outside the blocks
-  if (params.page && params.page === "list") {
-    url = `http://localhost:3001/partThird/${params.id}`;
-  } else if (params.page && params.page === "item") {
-    url = `http://localhost:3001/partDul/${params.id}`;
-  } else if (params.page && params.page === "category") {
-    url = `http://localhost:3001/partCat/${params.id}`;
-  } else {
-    window.location = "./404.html";
-  }
-
-  let response = null;
-  try {
-    response = await axios.get(url);
-    console.log(response.data);
-  } catch (error) {
-    console.error(error.code +"\n"+ error.message);
-    let alertThis = error.message;
-    if (error.response !== undefined) {
-      const add = error.response.status +"\n"+ error.response.statusText;
-      console.error(add);
-      alertThis += "\n"+ add;
-    }
-    alert(alertThis);
-    return;
-  }
-
-  document.querySelectorAll(".main-img").forEach((v,i) => {
-    v.setAttribute("src", response.data.img);
-  });
-
-  document.querySelector("#title").innerHTML = response.data.title;
-  document.querySelector("#price1").innerHTML = response.data.price1;
-  document.querySelector("#price2").innerHTML = " " + response.data.price2;
 
   //reviews
   let response1 = null;
@@ -121,7 +108,7 @@ window.addEventListener("load", async e => {
     return;
   }
 
-  document.querySelector("#review-cnt").innerHTML = `${response1.data.length}  Customer Review`;
+  document.querySelector("#review-cnt").innerHTML = `${response1.data.length} Customer Review`;
 
   response1.data.forEach((v,i) => {
     const div = document.createElement("div");

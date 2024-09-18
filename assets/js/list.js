@@ -1,7 +1,4 @@
-
 window.addEventListener("load",async  e => {
-  //const extern = document.querySelector("#header-import").import;
-  //document.querySelector("#header").insertAdjacentHTML('afterbegin', extern.getElementsByTagName("body")[0]);
 
   let response = null;
   try {
@@ -25,31 +22,59 @@ window.addEventListener("load",async  e => {
       return Object.fromEntries(query);
     }
   }
-
   const utilHelper = new util();
   const params = utilHelper.getQuery();
   document.querySelector(".part-first").querySelector("h1").innerHTML = `Shop for ${params.select}`;
    
-  if (params.select === "boys") {
-    response.data.partFirst.forEach((v,i) => {
-      document.querySelectorAll(".main-photo")[i].style.backgroundImage = `url(${v.imgBoys})`;
-    });
-  } else if (params.select === "girls") {
-    console.log("else if");
-    response.data.partFirst.forEach((v,i) => {
-      console.log("in the loop");
-      document.querySelectorAll(".main-photo")[i].style.backgroundImage = `url(${v.imgGirls})`;
-    });
-  } else if (params.select || params.select === undefined) {
-    console.log("select undefined or null");
-    window.location = "./404.html";
+  //part-first :background img 
+  switch (params.select) {
+    case "Boys":
+      response.data.listMain.forEach((v,i) => {
+        document.querySelectorAll(".main-photo")[i].style.backgroundImage = `url(${v.imgBoys})`;
+      });
+      break;
+    case "Girls":
+      response.data.listMain.forEach((v,i) => {
+        document.querySelectorAll(".main-photo")[i].style.backgroundImage = `url(${v.imgGirls})`;
+      });
+      break;
+    default:
+      window.location = "./404.html";
   }
 
-  response.data.partSecond.forEach((v,i) => {
-    document.querySelectorAll(".second-photos")[i].setAttribute("src", v.img);
+  //part-second
+  for (let i = 0; i < 8; i++) {
+    document.querySelector(".part-second").querySelector("ul").insertAdjacentHTML("beforeend",
+      ` <li>
+          <a href="#">
+            <figure>
+              <img  class="second-photos" src="" alt="second-list-sub-img"/>
+            </figure>
+            <p class="second-title center"></p>
+          </a>
+        </li>`
+    );
+  }
+
+  //8 categories
+  response.data.listSub.forEach((v,i) => { 
+    //for boys
+    let img;
+    switch (params.select) {
+      case "Boys":
+        img = v.img;
+        break;
+      case "Girls":
+        img = v.img1;
+        break;
+      default:
+        window.location = "./404.html";
+    }
     document.querySelectorAll(".second-title")[i].innerHTML = v.title;
+    document.querySelectorAll(".second-photos")[i].setAttribute("src", img);
   });
 
+  //part-third
   //~ul
   for (let i = 0; i < 2; i++) {
     const div = document.createElement("div");
@@ -69,10 +94,27 @@ window.addEventListener("load",async  e => {
     }
   }
   //in li
-  response.data.partThird.forEach((v,i) => {
-    //div > ul > li > a > figure, p1, p2
-    //if (li 1~5) {div > ul > li 5개}
-    //p2 > span1, span2
+  let index;
+  switch (params.select) {
+    case "Women":
+      index = 0;
+      break;
+    case "Boys":
+      index = 1;
+      break;
+    case "Girls":
+      index = 2;
+      break;
+    default:
+      console.log("default");
+      window.location = "./404.html";
+  }
+  response.data.Goods[index][params.select].forEach((v,i) => {
+    if (i >= 10) {
+      return;
+    }
+    console.log(i);
+
     const a = document.createElement("a");
     const figure = document.createElement("figure");
     const p1 = document.createElement("p");
@@ -88,24 +130,32 @@ window.addEventListener("load",async  e => {
     p2.appendChild(span2);
 
     const img = document.createElement("img");
-
     figure.appendChild(img);
-
     a.setAttribute("class", "part-two-a");
-    a.setAttribute("href", `item.html?id=${v.id}&page=list`); //
+    a.setAttribute("href", `item.html?id=${v.id}&page=list&select=${params.select}`);
     figure.setAttribute("class", "part-two-figure");
 
-    /**/
     img.setAttribute("src", v.img);
     img.setAttribute("alt", v.alt);
-
     p1.innerHTML = v.title;
     span1.innerHTML = v.price1;
     span2.innerHTML = v.price2;
   });
 
-  var sliders = document.querySelectorAll('.glide');
+  //dropdown
+  const ddb = document.querySelector("#dropdown-button");
+  ddb.innerHTML = `All for ${params.select}`;
+  ddb.setAttribute("href", `./category.html?select=${params.select}`);
 
+  //part-fourth
+  const partFourth = document.querySelector(".part-fourth");
+  partFourth.querySelector("h1").innerHTML = `${(params.select)}'s Clothings`;
+  partFourth.querySelector("p").innerHTML = `At Old Navy, shopping for ${(params.select)}’ clothes is fun, easy and affordable. Find fashion essentials and back to school clothing staples, including ${(params.select)}' jeans, graphic t-shirts, hoodies and ${(params.select)}' school uniform basics like polo shirts and khaki uniform pants.<br/><br/>
+        Discover ${(params.select)}' new arrivals to keep him cozy, from warm coats & jackets for ${(params.select)} to classic sweaters and pants. You'll also find his favorite ${(params.select)}' styles in a range of extended sizes, including ${(params.select)} slim and ${(params.select)} husky clothes.<br/><br/>
+        Keep him moving with ${(params.select)}' workout clothes from Old Navy Active. Our basketball shorts, t-shirts, tank tops and athletic clothes combine classic comfort with the latest performance technology. And when it's time for a break, we've got him covered with cozy pajamas, sweatshirts, hoodies, & sweatpants.`;
+
+  //glider
+  var sliders = document.querySelectorAll('.glide');
   for (var i = 0; i < sliders.length; i++) {
     var glide = new Glide(sliders[i], {
       gap: 15,

@@ -11,6 +11,5 @@ document.addEventListener("DOMContentLoaded", () => {
               <img src="./assets/img/icons/arrow.gif" alt="right arrow"/>
             </button>
           </div>`);
-    console.log("adjacent button finished");
   });
 });

@@ -1,8 +1,7 @@
-//load event
-window.addEventListener("load",async  e => {
+(async  e => {
   let response = null;
   try {
-    response = await axios.get("../assets/js/data.json");
+    response = await axios.get("./assets/js/data.json");
     console.log(response.data);
   } catch (error) {
     console.error(error.code +"\n"+ error.message);
@@ -17,7 +16,7 @@ window.addEventListener("load",async  e => {
   }
 
   //part-one
-  response.data.partOne.forEach((v,i) => {
+  response.data.index.forEach((v,i) => {
     //div > a, h1, divBtn
     const div = document.createElement("div");
     const a = document.createElement("a");
@@ -39,34 +38,59 @@ window.addEventListener("load",async  e => {
 
     a.setAttribute("href", "#");
     figure.setAttribute("class", "part-one-figure");
-    img.setAttribute("src", response.data.partOne[i].img);
-    img.setAttribute("alt", response.data.partOne[i].alt);
+    img.setAttribute("src", response.data.index[i].img);
+    img.setAttribute("alt", response.data.index[i].alt);
     h1.setAttribute("class", "part-one-h1");
     divBtn.setAttribute("class", "divBtn");
 
-    h1.innerHTML = response.data.partOne[i].title;
-    btn1.innerHTML = response.data.partOne[i].button1;
+    h1.innerHTML = response.data.index[i].title;
+    btn1.innerHTML = response.data.index[i].button1;
     
     if (i===0 || i===3) {
       const btn2 = document.createElement("button");
       divBtn.appendChild(btn2);
-      btn2.innerHTML = response.data.partOne[i].button2;
+      btn2.innerHTML = response.data.index[i].button2;
     }
 
     if (i===3) { //height 440px
       figure.setAttribute("class", "figure401");
       const btn3 = document.createElement("button");
       divBtn.appendChild(btn3);
-      btn3.innerHTML = response.data.partOne[i].button3;
+      btn3.innerHTML = response.data.index[i].button3;
     }
-  })
+  });
 
   //part-two
+  const filteredData1 = response.data.Goods[0].Women.filter(
+    data => data["category"] === "customized & new arrivals"
+  );
+  const filteredData2 = response.data.Goods[1].Boys.filter(
+    data => data["category"] === "customized & new arrivals"
+  );
+  const filteredData3 = response.data.Goods[2].Girls.filter(
+    data => data["category"] === "customized & new arrivals"
+  );
+  const filteredDataTotal = [...filteredData1, ...filteredData2, ...filteredData3];
+
+  function shuffle(array) {
+    let currentIndex = array.length;
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+      // Pick a remaining element...
+      let randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      // And swap it with the current element.
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+  }
+  
+  shuffle(filteredDataTotal);
+  console.log(filteredDataTotal);
+
   //div to ul
   for (let j = 0; j < 3; j++) {
-    console.log(`Appending to .loop index ${j}`);
     for (let i = 0; i < 2; i++) {
-      console.log(`Creating div for item ${i}`);
       const div = document.createElement("div");
       const ul = document.createElement("ul");
       document.querySelectorAll(".loop")[j].appendChild(div);
@@ -81,13 +105,12 @@ window.addEventListener("load",async  e => {
     for (let i = 0; i < ((j<4)?5:4); i++) {
       const li = document.createElement("li");
       document.querySelectorAll(".glide-ul")[j].appendChild(li);
-      console.log(`append li to ul ${j}`);
       li.setAttribute("class", "bunchOfLis");
     }
   }
 
   //div > ul > li > a > figure, p1, p2
-  response.data.partTwo.forEach((v,i) => {
+  filteredDataTotal.forEach((v,i) => {
     const a = document.createElement("a");
     const figure = document.createElement("figure");
     const p1 = document.createElement("p");
@@ -96,7 +119,6 @@ window.addEventListener("load",async  e => {
     const span2 = document.createElement("span");
 
     document.querySelectorAll(".bunchOfLis")[i].appendChild(a);
-    console.log(`append a to li ${i}`);
     a.appendChild(figure);
     a.appendChild(p1);
     a.appendChild(p2);
@@ -116,16 +138,14 @@ window.addEventListener("load",async  e => {
     p1.innerHTML = v.title;
     span1.innerHTML = v.price1;
     span2.innerHTML = v.price2;
-  })
+  });
 
-  var sliders = document.querySelectorAll('.glide');
-
-  for (var i = 0; i < sliders.length; i++) {
+  let sliders = document.querySelectorAll('.glide');
+  for (let i = 0; i < sliders.length; i++) {
     var glide = new Glide(sliders[i], {
       gap: 15,
     });
-    
     glide.mount();
   }
-});
+})();
 

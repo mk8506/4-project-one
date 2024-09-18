@@ -7,16 +7,35 @@
   }
   const utilHelper = new util();
   const params = utilHelper.getQuery();
-  console.log(params);
+  if (!params.select) {
+    params.select = "All";
+  }
 
+  //get data
+  let id;
+  switch (params.select) {
+    case "Women":
+      id = 1;
+      break;
+    case "Boys":
+      id = 2;
+      break;
+    case "Girls":
+      id = 3;
+      break;
+    default:
+      console.log("default");
+      window.location = "./404.html";
+  }
   let response = null;
-  const url = "http://localhost:3001/partCat";
+  const url = `http://localhost:3001/Goods/${id}/`;
+  console.log(url);
   try {
     response = await axios.get(url, {
       params: {
-        ...(params.select ? { select: params.select } : {})
+        ...(params.category ? { category: params.category } : {})
       }
-    });  //`?select=${params.select}`
+    });
     console.log(response.data);
   } catch (error) {
     console.error(error.code +"\n"+ error.message);
@@ -30,7 +49,7 @@
     return;
   }
 
-  response.data.forEach((v,i) => {
+  response.data[params.select].forEach((v,i) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
     const figure = document.createElement("figure");
@@ -50,7 +69,7 @@
     p2.appendChild(span2);
 
     a.setAttribute("class", "part-two-a");
-    a.setAttribute("href", `item.html?id=${v.id}&page=category`);
+    a.setAttribute("href", `item.html?select=${params.select}&id=${v.id}`);
     figure.setAttribute("class", "part-two-figure");
     img.setAttribute("src", v.img);
     img.setAttribute("alt", v.alt);
