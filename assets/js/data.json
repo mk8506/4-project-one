@@ -36,12 +36,12 @@
     {
       "id": 101,
       "imgBoys": "./assets/img/boys/NewArrival.png",
-      "imgGirls": "./assets/img/girls/Buttoned Open Front Cardigan for Girls.webp"
+      "imgGirls": "./assets/img/girls/main-photo1.jpg"
     },
     {
       "id": 102,
       "imgBoys": "./assets/img/boys/sale.png",
-      "imgGirls": "./assets/img/girls/Printed Short-Sleeve Ribbed Dress for Girls.avif"
+      "imgGirls": "./assets/img/girls/main-photo.jpg"
     }
   ],
   "listSub": [
@@ -213,6 +213,7 @@
         },
         {
           "id": 203,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/13.jpg",
           "alt": "part-two img 13",
@@ -222,6 +223,7 @@
         },
         {
           "id": 204,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/14.jpg",
           "alt": "part-two img 14",
@@ -231,6 +233,7 @@
         },
         {
           "id": 205,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/15.jpg",
           "alt": "part-two img 15",
@@ -248,6 +251,7 @@
         },
         {
           "id": 207,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/17.jpg",
           "alt": "part-two img 17",
@@ -257,6 +261,7 @@
         },
         {
           "id": 208,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/18.jpg",
           "alt": "part-two img 18",
@@ -266,6 +271,7 @@
         },
         {
           "id": 209,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/19.jpg",
           "alt": "part-two img 19",
@@ -275,6 +281,7 @@
         },
         {
           "id": 210,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/20.jpg",
           "alt": "part-two img 20",
@@ -284,6 +291,7 @@
         },
         {
           "id": 301,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/21.jpg",
           "alt": "part-two img 21",
@@ -293,6 +301,7 @@
         },
         {
           "id": 302,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/22.jpg",
           "alt": "part-two img 22",
@@ -310,6 +319,7 @@
         },
         {
           "id": 304,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/24.jpg",
           "alt": "part-two img 24",
@@ -327,6 +337,7 @@
         },
         {
           "id": 306,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/26.jpg",
           "alt": "part-two img 26",
@@ -344,6 +355,7 @@
         },
         {
           "id": 308,
+          "select": "Women",
           "category": "customized & new arrivals",
           "img": "./assets/img/partTwoImgs/28.jpg",
           "alt": "part-two img 28",
@@ -358,6 +370,7 @@
       "Boys": [
         {
           "id": 101,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/partThird/one.jpg",
           "title": "Jacket",
@@ -373,6 +386,7 @@
         },
         {
           "id": 103,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/partThird/three.jpg",
           "title": "Jacket",
@@ -381,6 +395,7 @@
         },
         {
           "id": 104,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/partThird/four.jpg",
           "title": "Jacket",
@@ -389,6 +404,7 @@
         },
         {
           "id": 105,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/partThird/five.jpg",
           "title": "Jacket",
@@ -404,6 +420,7 @@
         },
         {
           "id": 107,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/partThird/seven.jpg",
           "title": "Jacket",
@@ -419,6 +436,7 @@
         },
         {
           "id": 109,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/partThird/nine.jpg",
           "title": "Jacket",
@@ -427,6 +445,7 @@
         },
         {
           "id": 110,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/partThird/ten.jpg",
           "title": "Jacket",
@@ -435,6 +454,7 @@
         },
         {
           "id": 201,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/boys/Baggy Jogger Sweatpants for Boys.jpeg",
           "alt": "part-two img 1",
@@ -444,6 +464,7 @@
         },
         {
           "id": 202,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/boys/CloudMotion Long-Sleeve Graphic T-Shirt for Boys.jpeg",
           "alt": "part-two img 2",
@@ -453,6 +474,7 @@
         },
         {
           "id": 203,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/boys/Printed Softest Long-Sleeve T-Shirt for Boys.jpg",
           "alt": "part-two img 3",
@@ -462,6 +484,7 @@
         },
         {
           "id": 204,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/boys/Short-Sleeve Plain T-Shirt for Boys.jpg",
           "alt": "part-two img 4",
@@ -471,6 +494,7 @@
         },
         {
           "id": 205,
+          "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/boys/Go-Dry Cool Mesh Jogger Pants for Boys.jpg",
           "alt": "part-two img 5",
@@ -493,6 +517,7 @@
         },
         {
           "id": 102,
+          "select": "Girls",
           "category": "customized & new arrivals",
           "img": "./assets/img/girls/Loose High-Waisted Carpenter Pants for Girls.webp",
           "alt": "part-two img 12",
@@ -518,6 +543,7 @@
         },
         {
           "id": 105,
+          "select": "Girls",
           "category": "customized & new arrivals",
           "img": "./assets/img/girls/listone.webp",
           "alt": "part-two img 14",
@@ -527,6 +553,7 @@
         },
         {
           "id": 106,
+          "select": "Girls",
           "category": "customized & new arrivals",
           "img": "./assets/img/girls/listtwo.avif",
           "alt": "part-two img 14",
@@ -544,6 +571,7 @@
         },
         {
           "id": 108,
+          "select": "Girls",
           "category": "customized & new arrivals",
           "img": "./assets/img/girls/listfour.avif",
           "alt": "part-two img 14",

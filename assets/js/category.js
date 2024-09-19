@@ -80,5 +80,5 @@
     span2.innerHTML = v.price2;
   });
 
-  document.querySelector("#num-items").innerHTML = `${response.data.length} items`;
+  document.querySelector("#num-items").innerHTML = `${response.data[params.select].length} items`;
 })();

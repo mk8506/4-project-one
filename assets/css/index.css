@@ -74,6 +74,19 @@ button {
   .loop3 {
     max-width: 80%;
   }
+
+  img {
+    aspect-ratio: 3/4;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  p {
+    font-size: 14px;
+    color: #4d4d4d;
+  }
 }
 
 .part-two-figure {

@@ -35,6 +35,8 @@ window.addEventListener("load",async  e => {
       break;
     case "Girls":
       response.data.listMain.forEach((v,i) => {
+        console.log("background img Girls");
+        console.log(v.imgGirls);
         document.querySelectorAll(".main-photo")[i].style.backgroundImage = `url(${v.imgGirls})`;
       });
       break;
@@ -55,7 +57,7 @@ window.addEventListener("load",async  e => {
         </li>`
     );
   }
-
+  
   //8 categories
   response.data.listSub.forEach((v,i) => { 
     //for boys
@@ -72,6 +74,7 @@ window.addEventListener("load",async  e => {
     }
     document.querySelectorAll(".second-title")[i].innerHTML = v.title;
     document.querySelectorAll(".second-photos")[i].setAttribute("src", img);
+    document.querySelector(".part-second").querySelectorAll("a")[i].setAttribute("href", `./category.html?select=${params.select}&category=${v.title}`);
   });
 
   //part-third
@@ -113,7 +116,6 @@ window.addEventListener("load",async  e => {
     if (i >= 10) {
       return;
     }
-    console.log(i);
 
     const a = document.createElement("a");
     const figure = document.createElement("figure");
@@ -132,7 +134,7 @@ window.addEventListener("load",async  e => {
     const img = document.createElement("img");
     figure.appendChild(img);
     a.setAttribute("class", "part-two-a");
-    a.setAttribute("href", `item.html?id=${v.id}&page=list&select=${params.select}`);
+    a.setAttribute("href", `item.html?id=${v.id}&select=${params.select}`);
     figure.setAttribute("class", "part-two-figure");
 
     img.setAttribute("src", v.img);

@@ -26,7 +26,7 @@ window.addEventListener("load", async e => {
       break;
     default:
       console.log("default");
-      window.location = "./404.html";
+      //  window.location = "./404.html";
   }
   let response = null;
   try {
@@ -87,7 +87,7 @@ window.addEventListener("load", async e => {
   response.data[params.select].forEach((v,i) => {
     document.querySelectorAll(".dul-photos")[i].setAttribute("src", v.img);
     document.querySelectorAll(".dul-title")[i].innerHTML = v.title;
-    document.querySelectorAll(".dul-a")[i].setAttribute("href", `item.html?id=${v.id}`);
+    document.querySelectorAll(".dul-a")[i].setAttribute("href", `item.html?select=${params.select}&id=${v.id}`);
     document.querySelectorAll(".dul-button")[i].setAttribute("src", "./assets/img/icons/bagplus.png");
   });
 
@@ -137,7 +137,7 @@ window.addEventListener("load", async e => {
       p[0].innerHTML = v.name;
     }
     p[1].innerHTML = `${v.date}`;
-    p[2].innerHTML = response.data.title;
+    p[2].innerHTML = dataFind.title;
     p[2].setAttribute("class", "review-data-title");
     p[3].innerHTML = v.content;
     p[3].setAttribute("class", "review-content");

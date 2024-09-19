@@ -130,6 +130,7 @@
     figure.appendChild(img);
 
     a.setAttribute("class", "part-two-a");
+    a.setAttribute("href", `item.html?select=${v.select}&id=${v.id}`);
     figure.setAttribute("class", "part-two-figure");
     img.setAttribute("src", v.img);
     img.setAttribute("alt", v.alt);
