@@ -49,13 +49,13 @@
       "id": 101,
       "img": "./assets/img/boys/partSecond/one.png",
       "img1": "./assets/img/girls/one.avif",
-      "title": "GRAPHIC TEES & T-SHIRTS"
+      "title": "T-SHIRTS"
     },
     {
       "id": 102,
       "img": "./assets/img/boys/partSecond/two.png",
       "img1": "./assets/img/girls/two.avif",
-      "title": "SHORTS"
+      "title": "JEANS"
     },
     {
       "id": 103,
@@ -67,48 +67,31 @@
       "id": 104,
       "img": "./assets/img/boys/partSecond/four.png",
       "img1": "./assets/img/girls/four.avif",
-      "title": "SWEATSHIRTS & SWEATPANTS"
+      "title": "POLOS"
     },
     {
       "id": 201,
       "img": "./assets/img/boys/partSecond/five.png",
       "img1": "./assets/img/girls/five.avif",
-      "title": "SWIM"
+      "title": "SHORTS"
     },
     {
       "id": 202,
       "img": "./assets/img/boys/partSecond/six.png",
       "img1": "./assets/img/girls/six.avif",
-      "title": "POLOS"
+      "title": "SWEATSHIRTS"
     },
     {
       "id": 203,
       "img": "./assets/img/boys/partSecond/seven.png",
       "img1": "./assets/img/girls/seven.avif",
-      "title": "PANTS"
+      "title": "SWIM"
     },
     {
       "id": 204,
       "img": "./assets/img/boys/partSecond/eight.png",
       "img1": "./assets/img/girls/eight.avif",
-      "title": "JEANS"
-    }
-  ],
-  "footerGlider": [
-    {
-      "id": 101,
-      "img": "./assets/img/old-navy-footer/footer-glider-one.svg",
-      "alt": "imagine"
-    },
-    {
-      "id": 102,
-      "img": "./assets/img/old-navy-footer/footer-glider-two.svg",
-      "alt": "we can change"
-    },
-    {
-      "id": 103,
-      "img": "./assets/img/old-navy-footer/footer-glider-three.jpg",
-      "alt": "find a store"
+      "title": "GRAPHIC TEES"
     }
   ],
   "Goods": [
@@ -372,15 +355,17 @@
           "id": 101,
           "select": "Boys",
           "category": "customized & new arrivals",
+          "cat": "SWEATSHIRTS",
           "img": "./assets/img/boys/partThird/one.jpg",
-          "title": "Jacket",
+          "title": "Soft and Comfy SweatShirt",
           "price1": "&dollar;39.99",
           "price2": "&dollar;23.99"
         },
         {
           "id": 102,
+          "cat": "POLOS",
           "img": "./assets/img/boys/partThird/two.jpg",
-          "title": "Jacket",
+          "title": "True White Polo for Boys",
           "price1": "&dollar;39.99",
           "price2": "&dollar;23.99"
         },
@@ -388,17 +373,18 @@
           "id": 103,
           "select": "Boys",
           "category": "customized & new arrivals",
+          "cat": "SWEATSHIRTS",
           "img": "./assets/img/boys/partThird/three.jpg",
-          "title": "Jacket",
-          "price1": "&dollar;39.99",
-          "price2": "&dollar;23.99"
+          "title": "Khaki colored Sweatshirt",
+          "price1": "&dollar;39.50",
+          "price2": "&dollar;23.50"
         },
         {
           "id": 104,
           "select": "Boys",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/partThird/four.jpg",
-          "title": "Jacket",
+          "title": "Casual Black Pants for Boys",
           "price1": "&dollar;39.99",
           "price2": "&dollar;23.99"
         },
@@ -406,8 +392,9 @@
           "id": 105,
           "select": "Boys",
           "category": "customized & new arrivals",
+          "cat": "JEANS",
           "img": "./assets/img/boys/partThird/five.jpg",
-          "title": "Jacket",
+          "title": "Bright Colored Jeans",
           "price1": "&dollar;39.99",
           "price2": "&dollar;23.99"
         },
@@ -437,6 +424,7 @@
         {
           "id": 109,
           "select": "Boys",
+          "cat": "JEANS",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/partThird/nine.jpg",
           "title": "Jacket",
@@ -465,6 +453,7 @@
         {
           "id": 202,
           "select": "Boys",
+          "cat": "GRAPHIC TEES",
           "category": "customized & new arrivals",
           "img": "./assets/img/boys/boys/CloudMotion Long-Sleeve Graphic T-Shirt for Boys.jpeg",
           "alt": "part-two img 2",
@@ -476,6 +465,7 @@
           "id": 203,
           "select": "Boys",
           "category": "customized & new arrivals",
+          "cat": "SWEATSHIRTS",
           "img": "./assets/img/boys/boys/Printed Softest Long-Sleeve T-Shirt for Boys.jpg",
           "alt": "part-two img 3",
           "title": "Printed Softest Long-Sleeve T-Shirt for Boys",
@@ -486,6 +476,7 @@
           "id": 204,
           "select": "Boys",
           "category": "customized & new arrivals",
+          "cat": "SWIM",
           "img": "./assets/img/boys/boys/Short-Sleeve Plain T-Shirt for Boys.jpg",
           "alt": "part-two img 4",
           "title": "Short-Sleeve Plain T-Shirt for Boys",

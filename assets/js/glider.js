@@ -1,5 +1,3 @@
-//button
-console.log("adjacent button");
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".glide").forEach((v,i) => {
     v.insertAdjacentHTML('beforeend',`

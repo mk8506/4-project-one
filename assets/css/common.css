@@ -176,7 +176,16 @@
 
   .subscribe-three {
     border-right: 1px solid rgb(155, 155, 155); 
-    flex: 1 1 0;
+    padding-top: 40px;
+    width: 33.33%;
+
+    .glide {
+      max-width: 300px;
+
+      .glide__track {
+        padding: 15px;
+      }
+    }
 
     &:last-child {
       border: none;
@@ -227,21 +236,12 @@
   margin: auto;
   margin-top: 35px;
   margin-bottom: 35px;
-  
-  .on-container {
-    width: 60px;
-    height: 30px;
-  }
 
   ul {
     width: 25%;
 
-    li:first-child {
-      margin-bottom: 20px;
-
-      h1 {
-        font-size: 16px;
-      }
+    h1 {
+      font-size: 16px;
     }
   }
 

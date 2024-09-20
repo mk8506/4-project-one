@@ -52,6 +52,86 @@ main {
     color: rgb(179, 0, 0);
   }
 
+  .colors {
+    margin-top: 20px;
+
+    div {
+      margin-right: 14px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+
+      &:hover {
+        border: 2px solid rgb(65, 65, 65);
+        cursor: pointer;
+        width: 26px;
+        height: 26px;
+      }
+
+      &:first-child {
+        background-color: grey;
+      }
+      &:nth-child(2) {
+        background-color: rgb(190, 168, 96);
+      }
+      &:nth-child(3) {
+        background-color: rgb(0, 0, 0);
+      }
+      &:nth-child(4) {
+        background-color: rgb(46, 39, 15);
+      }
+      &:nth-child(5) {
+        background-color: rgb(10, 14, 51);
+      }
+    }
+  }
+
+  .size {
+    div {
+      margin-right: 20px;
+      margin-top: 30px;
+      color: grey;
+      letter-spacing: 1px;
+      font-weight: bold;
+
+      &:hover {
+        color: rgb(5, 26, 5);
+        border-bottom: 1px solid rgb(5, 26, 5);
+        cursor: pointer;
+      }
+
+      &.active {
+        color: rgb(5, 26, 5);
+        border-bottom: 1px solid rgb(5, 26, 5);
+      }
+    }
+  }
+
+  .sizeboxes {
+    margin-top: 14px;
+
+    div {
+      margin-right: 14px;
+      width: 40px;
+      height: 40px;
+      background-color: rgb(228, 228, 228);
+      color: rgba(13, 31, 5, 0.767);
+      position: relative;
+
+      span {
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
   .add-to-bag-container {
     width: 100%; 
     margin-top: 40px;

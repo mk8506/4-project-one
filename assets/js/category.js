@@ -49,7 +49,16 @@
     return;
   }
 
-  response.data[params.select].forEach((v,i) => {
+  let filteredData;
+  if (params.category != undefined) {
+    filteredData = response.data[params.select].filter(
+      data => data["cat"] === params.category
+    );
+  } else {
+    filteredData = response.data[params.select];
+  }
+
+  filteredData.forEach((v,i) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
     const figure = document.createElement("figure");
@@ -80,5 +89,5 @@
     span2.innerHTML = v.price2;
   });
 
-  document.querySelector("#num-items").innerHTML = `${response.data[params.select].length} items`;
+  document.querySelector("#num-items").innerHTML = `${filteredData.length} items`;
 })();
